@@ -74,11 +74,11 @@ read-through for internal-link and placeholder correctness.
 
 ## Phase 3 — Portable components (Next.js App Router + MDX reference impls)
 
-1. `[ ]` **MDX GEO components** — `src/components/mdx/key-answer.tsx`,
+1. `[x]` **MDX GEO components** — `src/components/mdx/key-answer.tsx`,
    `faq.tsx` (`Faq` + `FaqItem`, collects children into FAQPage JSON-LD),
    `stat-callout.tsx`. Typed, styleable via className props. Test: FAQ child →
    schema extraction.
-2. `[ ]` **JSON-LD builders** — `src/seo/json-ld.ts`: config-driven
+2. `[x]` **JSON-LD builders** — `src/seo/json-ld.ts`: config-driven
    `organizationSchema`, `articleSchema`, `faqPageSchema`, `breadcrumbSchema`,
    `eventSchema`, `websiteSchema`. Pure functions. Unit-tested shapes.
 3. `[ ]` **OG image URL builder** — `src/seo/og-image-url.ts` (config base +
