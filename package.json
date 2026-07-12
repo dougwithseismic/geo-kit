@@ -1,13 +1,41 @@
 {
   "name": "geo-kit",
   "version": "0.1.0",
-  "private": true,
-  "description": "AI-citation / GEO user-acquisition kit — prompts, components, infra, and measurement tools for getting a site cited by AI search engines. Framework-agnostic playbook + Next.js/MDX reference implementations.",
+  "description": "AI-citation / GEO user-acquisition kit — playbook, agent skills, Next.js/MDX components, infra, and measurement tools for getting a site cited by AI search engines.",
   "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": { "types": "./dist/index.d.ts", "default": "./dist/index.js" },
+      "require": { "types": "./dist/index.d.cts", "default": "./dist/index.cjs" }
+    },
+    "./react": {
+      "import": { "types": "./dist/react.d.ts", "default": "./dist/react.js" },
+      "require": { "types": "./dist/react.d.cts", "default": "./dist/react.cjs" }
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "geo-kit-gsc-pull": "./src/measurement/gsc-pull.mjs"
+  },
+  "files": [
+    "dist",
+    "src",
+    "playbook",
+    "skills",
+    "templates",
+    "README.md"
+  ],
   "scripts": {
+    "build": "tsup",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "prepare": "tsup",
+    "prepublishOnly": "tsup"
   },
   "keywords": [
     "geo",
@@ -21,10 +49,19 @@
   "dependencies": {
     "croner": "^10.0.1"
   },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
   "devDependencies": {
     "@types/node": "^22.10.0",
     "@types/react": "^19.0.0",
     "react": "^19.0.0",
+    "tsup": "^8.5.1",
     "typescript": "^5.7.0",
     "vitest": "^3.0.0"
   }

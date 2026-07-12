@@ -1,10 +1,9 @@
 /**
- * geo-kit — importable surface.
+ * geo-kit core — framework-free utilities. Import from `geo-kit`.
  *
- * Pure utilities (config, SEO builders, infra, measurement) import cleanly.
- * The React/MDX components are re-exported here too but require `react` in the
- * consuming app. Markdown assets (`playbook/`, `skills/`, `templates/`) are
- * copied, not imported.
+ * React/MDX components live in the `geo-kit/react` entry (`src/react.ts`) so
+ * server-only consumers never pull in React. Markdown assets (`playbook/`,
+ * `skills/`, `templates/`) are copied, not imported.
  */
 
 // Config (the parameterization contract)
@@ -23,13 +22,7 @@ export * from "./feed/rss";
 export * from "./infra/scheduler";
 export * from "./infra/indexnow";
 
-// Measurement
+// Measurement (pure)
 export * from "./measurement/gsc";
 export * from "./measurement/ai-referral";
 export * from "./measurement/ai-bot-telemetry";
-
-// Components (require react in the consuming app)
-export { JsonLd } from "./components/json-ld";
-export { KeyAnswer } from "./components/mdx/key-answer";
-export { StatCallout } from "./components/mdx/stat-callout";
-export { Faq, FaqItem, extractFaqEntries } from "./components/mdx/faq";

@@ -24,6 +24,27 @@ nothing else hard-codes a brand or URL.
 | [`src/measurement/`](./src/measurement) | GSC pull, AI-referral + AI-bot telemetry | Import + run |
 | [`templates/`](./templates) | Listings, PR targets, citation checks, Wikidata | Fill placeholders |
 
+## Install
+
+```bash
+# from GitHub (private repo — builds on install via the `prepare` script)
+pnpm add github:dougwithseismic/geo-kit
+# or, once published to a registry
+pnpm add geo-kit
+```
+
+Two entry points keep React out of server code:
+
+```ts
+import { buildRobots, faqPageSchema } from "geo-kit";        // core — framework-free
+import { Faq, FaqItem, KeyAnswer } from "geo-kit/react";     // components — needs react (peer)
+```
+
+Ships dual ESM/CJS with types. `react` is an **optional peer dependency** — only
+needed if you import from `geo-kit/react`. The `geo-kit-gsc-pull` bin runs the
+Search Console pull. Prefer not to install it? Every asset is also copy-paste
+friendly (see below).
+
 ## Quickstart
 
 1. **Read** [`playbook/README.md`](./playbook/README.md) — the decision rules —
@@ -73,11 +94,9 @@ nothing else hard-codes a brand or URL.
 ```bash
 pnpm install
 pnpm typecheck   # tsc --noEmit
-pnpm test        # vitest
+pnpm test        # vitest (52 tests)
+pnpm build       # tsup → dist/ (ESM + CJS + .d.ts for the `.` and `./react` entries)
 ```
-
-Not published to npm (no bundling pipeline yet) — it's a starter kit + reference
-implementations. Adding a `tsup` build is a natural next step.
 
 ## The evidence
 
