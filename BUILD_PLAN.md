@@ -61,14 +61,14 @@ read-through for internal-link and placeholder correctness.
 
 ## Phase 2 — Agent skills (drop into `.claude/skills/`)
 
-1. `[ ]` **`skills/geo-audit/SKILL.md`** — audit an existing site's GEO surface
+1. `[x]` **`skills/geo-audit/SKILL.md`** — audit an existing site's GEO surface
    (metadata, JSON-LD types, robots + AI-crawler access, sitemap coverage,
    SSR/crawlability, content structure) and emit a prioritized gap report keyed
    to the playbook.
-2. `[ ]` **`skills/geo-content/SKILL.md`** — generate AI-citable content
+2. `[x]` **`skills/geo-content/SKILL.md`** — generate AI-citable content
    (answer-first, question headings, sourced stats, FAQ schema, freshness),
    parameterized by `geo.config`; references the MDX components and playbook.
-3. `[ ]` **`skills/geo-measure/SKILL.md`** — run the measurement toolkit (GSC
+3. `[x]` **`skills/geo-measure/SKILL.md`** — run the measurement toolkit (GSC
    pull, AI-referral + bot telemetry, citation spot-checks) and report deltas
    vs a baseline.
 
