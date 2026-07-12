@@ -1,0 +1,31 @@
+{
+  "name": "geo-kit",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI-citation / GEO user-acquisition kit — prompts, components, infra, and measurement tools for getting a site cited by AI search engines. Framework-agnostic playbook + Next.js/MDX reference implementations.",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "geo",
+    "aeo",
+    "seo",
+    "ai-search",
+    "llm",
+    "user-acquisition"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "croner": "^10.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "react": "^19.0.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  }
+}
