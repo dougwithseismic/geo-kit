@@ -103,15 +103,15 @@ read-through for internal-link and placeholder correctness.
 
 ## Phase 5 — Measurement toolkit
 
-1. `[ ]` **GSC pull** — `src/measurement/gsc-pull.mjs`: config-driven Search
+1. `[x]` **GSC pull** — `src/measurement/gsc-pull.mjs`: config-driven Search
    Console pull (ADC auth) with baseline-delta reporting; write dated JSON to
    gitignored `data/`. Extract the sitemap/`<loc>`-free query logic into a
    testable helper; unit-test the totals/delta math.
-2. `[ ]` **AI-referral tracker** — `src/measurement/ai-referral.ts`: pure
+2. `[x]` **AI-referral tracker** — `src/measurement/ai-referral.ts`: pure
    `matchAiReferrer(referrer, sources)` matcher + a React `AiReferralTracker`
    reference component that fires a `track(event, props)` injected callback once
    per session. Unit-test the matcher across ChatGPT/Perplexity/Claude/Gemini.
-3. `[ ]` **AI-bot telemetry** — `src/measurement/ai-bot-telemetry.ts`: pure
+3. `[x]` **AI-bot telemetry** — `src/measurement/ai-bot-telemetry.ts`: pure
    `matchAiBot(userAgent, patterns)` + a framework-neutral `trackAiBotFetch`
    helper (fire-and-forget). Unit-test the UA matcher (ChatGPT-User, GPTBot,
    PerplexityBot, ClaudeBot, etc.).
