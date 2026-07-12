@@ -118,11 +118,11 @@ read-through for internal-link and placeholder correctness.
 
 ## Phase 6 — Templates, barrel & quickstart
 
-1. `[ ]` **GTM templates** — `templates/`: `listings-pack.md`, `pr-targets.md`,
+1. `[x]` **GTM templates** — `templates/`: `listings-pack.md`, `pr-targets.md`,
    `ai-citation-checks.md`, `wikidata-entity.md` — placeholder-driven, generic.
-2. `[ ]` **Barrel + entry** — `src/index.ts` re-exporting the importable
+2. `[x]` **Barrel + entry** — `src/index.ts` re-exporting the importable
    utilities (config, seo, infra, measurement); typecheck confirms the surface.
-3. `[ ]` **Root `README.md`** — what it is, the two usage modes (copy assets /
+3. `[x]` **Root `README.md`** — what it is, the two usage modes (copy assets /
    import utilities), per-directory guide, the `geo.config` quickstart, framework
    caveats, and a link to the playbook. Verified: every referenced path exists.
 
