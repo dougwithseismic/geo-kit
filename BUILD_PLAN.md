@@ -46,16 +46,16 @@ read-through for internal-link and placeholder correctness.
 
 ## Phase 1 — Playbook (framework-agnostic knowledge)
 
-1. `[ ]` **`playbook/evidence.md`** — the distilled, cited evidence base: what
+1. `[x]` **`playbook/evidence.md`** — the distilled, cited evidence base: what
    measurably drives AI citations (crawler-access rules; answer-first / Q&A /
    stats content structure; off-site mentions > page volume; ChatGPT↔Bing
    grounding; measurement realities; folklore flags incl. llms.txt). Sourced,
    product-agnostic.
-2. `[ ]` **`playbook/README.md`** — the decision rules a human or agent applies:
+2. `[x]` **`playbook/README.md`** — the decision rules a human or agent applies:
    the crawler-access matrix (which UAs gate citations vs training), the on-page
    structure checklist, the off-site priority order, and the "deliberately NOT
    doing" list. Links to evidence.md.
-3. `[ ]` **`playbook/plan-template.md`** — the phased GEO execution-plan template
+3. `[x]` **`playbook/plan-template.md`** — the phased GEO execution-plan template
    (unblock/hygiene → content structure → own-the-intents → entity → measure →
    off-site), with `{{placeholders}}` for brand/domain/locale.
 
