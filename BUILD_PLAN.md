@@ -81,12 +81,12 @@ read-through for internal-link and placeholder correctness.
 2. `[x]` **JSON-LD builders** — `src/seo/json-ld.ts`: config-driven
    `organizationSchema`, `articleSchema`, `faqPageSchema`, `breadcrumbSchema`,
    `eventSchema`, `websiteSchema`. Pure functions. Unit-tested shapes.
-3. `[ ]` **OG image URL builder** — `src/seo/og-image-url.ts` (config base +
+3. `[x]` **OG image URL builder** — `src/seo/og-image-url.ts` (config base +
    typed params → absolute `/api/og?...` URL). Unit-tested.
-4. `[ ]` **robots + sitemap helpers** — `src/seo/robots.ts` (AI-crawler
+4. `[x]` **robots + sitemap helpers** — `src/seo/robots.ts` (AI-crawler
    allow-list builder returning a plain rules shape; comment maps to Next
    `MetadataRoute.Robots`), `src/seo/sitemap.ts` (entry builder). Unit-tested.
-5. `[ ]` **RSS feed** — `src/feed/rss.ts`: pure `renderRssFeed(items, config)`
+5. `[x]` **RSS feed** — `src/feed/rss.ts`: pure `renderRssFeed(items, config)`
    returning an XML string (web-standard, no framework). Unit-tested (escaping,
    item count).
 
