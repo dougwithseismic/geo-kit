@@ -92,12 +92,12 @@ read-through for internal-link and placeholder correctness.
 
 ## Phase 4 — Portable infra
 
-1. `[ ]` **In-process cron scheduler** — `src/infra/scheduler.ts`: croner-based,
+1. `[x]` **In-process cron scheduler** — `src/infra/scheduler.ts`: croner-based,
    config-driven job table (schedule + endpoint path), localhost-trigger with a
    shared secret, `protect`/UTC, `ENABLE_IN_PROCESS_CRON` gate,
    `startScheduler`/`stopScheduler`. Unit-tested (registration count, schedule
    validity, disabled no-op) + README on wiring into any Node server.
-2. `[ ]` **IndexNow** — `src/infra/indexnow.ts`: `submitUrls(urls, config)` +
+2. `[x]` **IndexNow** — `src/infra/indexnow.ts`: `submitUrls(urls, config)` +
    `pingFromSitemap(config)` (fetch sitemap → parse `<loc>` → submit). Pure,
    injectable fetch. Unit-tested (parse, submit body, 202-as-success, dry run).
 
