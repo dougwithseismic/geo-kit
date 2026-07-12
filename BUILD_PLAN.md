@@ -37,7 +37,7 @@ read-through for internal-link and placeholder correctness.
 1. `[x]` **Toolchain** — git init, `package.json` (pnpm; typecheck + test
    scripts), `tsconfig.json` (strict, react-jsx, bundler), `vitest.config.ts`,
    `.gitignore`. Gates verified green on empty `src/`.
-2. `[ ]` **Config layer** — `src/config.ts`: the `GeoConfig` type (site url,
+2. `[x]` **Config layer** — `src/config.ts`: the `GeoConfig` type (site url,
    brand name/description, founder, locale, `areaServed`, `knowsAbout`, target
    query intents, AI-referrer source patterns, AI-bot UA patterns, IndexNow key,
    cron job table type) + `defineGeoConfig()` identity helper + a fully-worked
