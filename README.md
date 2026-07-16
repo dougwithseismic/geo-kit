@@ -29,8 +29,8 @@ nothing else hard-codes a brand or URL.
 | [`playbook/`](./playbook) | Evidence base + decision rules + plan template | Read first; drive work from it |
 | [`skills/`](./skills) | `geo-audit`, `geo-content`, `geo-measure` | Copy into `.claude/skills/` |
 | [`src/config.ts`](./src/config.ts) | `GeoConfig` contract + defaults | Create your `geo.config.ts` |
-| [`src/seo/`](./src/seo) | JSON-LD builders, OG-image URL, robots, sitemap | Import from `geo-kit` |
-| [`src/components/`](./src/components) | `KeyAnswer`, `Faq`/`FaqItem`, `StatCallout`, `JsonLd`, `AiReferralTracker` | Import from `geo-kit/react` |
+| [`src/seo/`](./src/seo) | JSON-LD builders, OG-image URL, robots, sitemap | Import from `@withseismic/geo-kit` |
+| [`src/components/`](./src/components) | `KeyAnswer`, `Faq`/`FaqItem`, `StatCallout`, `JsonLd`, `AiReferralTracker` | Import from `@withseismic/geo-kit/react` |
 | [`src/feed/`](./src/feed) | RSS renderer | Import `renderRssFeed` |
 | [`src/infra/`](./src/infra) | In-process cron scheduler, IndexNow | Import + wire |
 | [`src/measurement/`](./src/measurement) | GSC pull, AI-referral + AI-bot telemetry | Import + run |
@@ -39,17 +39,15 @@ nothing else hard-codes a brand or URL.
 ## Install
 
 ```bash
-pnpm add github:dougwithseismic/geo-kit   # private repo — builds on install via `prepare`
-# once published to a registry:
-pnpm add geo-kit
+pnpm add @withseismic/geo-kit
 ```
 
 Two entry points keep React out of server code — the core is framework-free; the
 `react` entry needs React (an **optional** peer dependency):
 
 ```ts
-import { buildRobots, faqPageSchema } from "geo-kit";        // core
-import { Faq, FaqItem, KeyAnswer } from "geo-kit/react";     // components
+import { buildRobots, faqPageSchema } from "@withseismic/geo-kit";        // core
+import { Faq, FaqItem, KeyAnswer } from "@withseismic/geo-kit/react";     // components
 ```
 
 Ships **dual ESM/CJS with type declarations**. Every asset is also copy-paste
@@ -63,7 +61,7 @@ Create `geo.config.ts` in your app (copy from
 brand-specific file:
 
 ```ts
-import { defineGeoConfig } from "geo-kit";
+import { defineGeoConfig } from "@withseismic/geo-kit";
 
 export const geoConfig = defineGeoConfig({
   siteUrl: "https://yoursite.com",        // no trailing slash
@@ -113,7 +111,7 @@ Emit one robots file with an AI-crawler allow-list and the correct sitemap URL:
 ```ts
 // app/robots.ts
 import type { MetadataRoute } from "next";
-import { buildRobots } from "geo-kit";
+import { buildRobots } from "@withseismic/geo-kit";
 import { geoConfig } from "@/geo.config";
 
 export default function robots(): MetadataRoute.Robots {
@@ -138,7 +136,7 @@ training crawlers by default. Pass `aiCrawlers` to override. Delete any static
 ```ts
 // app/sitemap.ts
 import type { MetadataRoute } from "next";
-import { sitemapEntry } from "geo-kit";
+import { sitemapEntry } from "@withseismic/geo-kit";
 import { geoConfig } from "@/geo.config";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
@@ -164,8 +162,8 @@ clean sitemaps help them disproportionately.
 Builders return plain objects; render them with `JsonLd`:
 
 ```tsx
-import { organizationSchema, articleSchema, breadcrumbSchema } from "geo-kit";
-import { JsonLd } from "geo-kit/react";
+import { organizationSchema, articleSchema, breadcrumbSchema } from "@withseismic/geo-kit";
+import { JsonLd } from "@withseismic/geo-kit/react";
 import { geoConfig } from "@/geo.config";
 
 export default function ArticlePage({ post }) {
@@ -209,7 +207,7 @@ component), and `eventSchema(config, event)` — which returns **`null`** when
 
 ```ts
 // in generateMetadata for a page
-import { buildOgImageUrl } from "geo-kit";
+import { buildOgImageUrl } from "@withseismic/geo-kit";
 
 export async function generateMetadata({ params }) {
   const post = await getPost(params.slug);
@@ -231,7 +229,7 @@ default = broken share previews sitewide).
 
 ```ts
 // app/feed.xml/route.ts
-import { renderRssFeed } from "geo-kit";
+import { renderRssFeed } from "@withseismic/geo-kit";
 import { geoConfig } from "@/geo.config";
 
 export const revalidate = 3600;
@@ -263,7 +261,7 @@ Add `<link rel="alternate" type="application/rss+xml" href="/feed.xml">` sitewid
 Register the components in your MDX map, then author with them:
 
 ```ts
-import { KeyAnswer, Faq, FaqItem, StatCallout } from "geo-kit/react";
+import { KeyAnswer, Faq, FaqItem, StatCallout } from "@withseismic/geo-kit/react";
 export const mdxComponents = { KeyAnswer, Faq, FaqItem, StatCallout };
 ```
 
@@ -303,7 +301,7 @@ cloud-cron minimum-interval floor). It POSTs your existing job endpoints on
 localhost with a shared secret:
 
 ```ts
-import { startScheduler, stopScheduler } from "geo-kit";
+import { startScheduler, stopScheduler } from "@withseismic/geo-kit";
 import { geoConfig } from "./geo.config";
 
 const port = Number(process.env.PORT ?? 3000);
@@ -329,7 +327,7 @@ secret-guarded endpoint and schedule it daily:
 
 ```ts
 // app/api/cron/indexnow/route.ts
-import { pingFromSitemap } from "geo-kit";
+import { pingFromSitemap } from "@withseismic/geo-kit";
 import { geoConfig } from "@/geo.config";
 
 export async function POST(req: Request) {
@@ -354,7 +352,7 @@ from an AI assistant:
 
 ```tsx
 "use client";
-import { AiReferralTracker } from "geo-kit/react";
+import { AiReferralTracker } from "@withseismic/geo-kit/react";
 import posthog from "posthog-js";
 
 export function Analytics() {
@@ -368,7 +366,7 @@ hits ≈ being used in a live answer:
 ```ts
 // middleware.ts
 import { NextResponse } from "next/server";
-import { trackAiBotFetch } from "geo-kit";
+import { trackAiBotFetch } from "@withseismic/geo-kit";
 
 export function middleware(req) {
   trackAiBotFetch({
@@ -395,7 +393,7 @@ npx geo-kit-gsc-pull 28        # writes dated JSON to ./data, prints totals
 ```
 
 For custom reporting, import the pure helpers: `sumTotals`, `pctChange`,
-`formatPct`, `findQuery` (in `geo-kit`). Also run the monthly
+`formatPct`, `findQuery` (in `@withseismic/geo-kit`). Also run the monthly
 [citation spot-checks](./templates/ai-citation-checks.md) — the ground truth —
 and check the GSC generative-AI report + Bing Webmaster Tools AI Performance.
 
@@ -404,7 +402,7 @@ and check the GSC generative-AI report + Bing Webmaster Tools AI Performance.
 Copy the skills into your project so Claude Code / agents can drive the work:
 
 ```bash
-cp -r node_modules/geo-kit/skills/* .claude/skills/
+cp -r node_modules/@withseismic/geo-kit/skills/* .claude/skills/
 ```
 
 - **`geo-audit`** — audits crawler access, indexability, structured data, on-page
@@ -421,7 +419,7 @@ Each is self-contained (embeds the rules) so it works standalone.
 Copy and fill the `{{placeholders}}`:
 
 ```bash
-cp node_modules/geo-kit/templates/*.md docs/seo/
+cp node_modules/@withseismic/geo-kit/templates/*.md docs/seo/
 ```
 
 - `listings-pack.md` — GBP / Bing Places / Yelp / Foursquare details (local).
@@ -435,7 +433,7 @@ The playbook, skills, templates, and all pure utilities transfer to any stack.
 For non-Next apps, serializers turn the builder output into strings:
 
 ```ts
-import { buildRobots, robotsToText, sitemapEntry, sitemapToXml } from "geo-kit";
+import { buildRobots, robotsToText, sitemapEntry, sitemapToXml } from "@withseismic/geo-kit";
 
 const robotsTxt = robotsToText(buildRobots(geoConfig, { disallow: ["/api/"] }));
 const sitemapXml = sitemapToXml([sitemapEntry(geoConfig, "/", { priority: 1 })]);

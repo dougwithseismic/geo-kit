@@ -10,7 +10,7 @@ every-minute jobs work.
 Wire it into any Node HTTP server after it starts listening:
 
 ```ts
-import { startScheduler, stopScheduler } from "geo-kit/infra/scheduler";
+import { startScheduler, stopScheduler } from "@withseismic/geo-kit";
 import { myConfig } from "./geo.config";
 
 const port = Number(process.env.PORT ?? 3000);

@@ -1,6 +1,17 @@
 {
-  "name": "geo-kit",
+  "name": "@withseismic/geo-kit",
   "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dougwithseismic/geo-kit.git"
+  },
+  "homepage": "https://github.com/dougwithseismic/geo-kit#readme",
+  "bugs": {
+    "url": "https://github.com/dougwithseismic/geo-kit/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "AI-citation / GEO user-acquisition kit — playbook, agent skills, Next.js/MDX components, infra, and measurement tools for getting a site cited by AI search engines.",
   "type": "module",
   "sideEffects": false,
