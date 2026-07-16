@@ -1,11 +1,23 @@
 # geo-kit
 
+> Get your site cited by AI search engines — ChatGPT, Google AI Overviews, Perplexity, Claude.
+
+[![npm version](https://img.shields.io/npm/v/%40withseismic%2Fgeo-kit?logo=npm&color=cb0000)](https://www.npmjs.com/package/@withseismic/geo-kit)
+[![npm downloads](https://img.shields.io/npm/dm/%40withseismic%2Fgeo-kit?logo=npm)](https://www.npmjs.com/package/@withseismic/geo-kit)
+[![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
+[![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6?logo=typescript&logoColor=white)](./tsconfig.json)
+[![ESM + CJS](https://img.shields.io/badge/module-ESM%20%2B%20CJS-f7df1e?logo=javascript&logoColor=black)](#install)
+
 A portable **AI-citation / GEO (Generative Engine Optimization) user-acquisition
 kit**. It packages the reusable pieces for getting a website cited by AI search
 engines — **ChatGPT search, Google AI Overviews / AI Mode, Perplexity, Claude** —
-into one repo you drop into any project: a framework-agnostic playbook, agent
+into one package you drop into any project: a framework-agnostic playbook, agent
 skills, Next.js/MDX components, portable infra, a measurement toolkit, and
 go-to-market templates.
+
+**Used in production on** [hogsend.com](https://hogsend.com) · [dinnerswithfriends.co.uk](https://dinnerswithfriends.co.uk)
+
+Built by [withseismic](https://withseismic.com).
 
 Everything brand- and domain-specific lives in **one config** (`GeoConfig`);
 nothing else hard-codes a brand or URL.
@@ -485,3 +497,17 @@ Every tactic is grounded in [`playbook/evidence.md`](./playbook/evidence.md),
 which also flags the folklore to **skip**: `llms.txt` (no engine consumes it),
 `speakable` schema, mass thin programmatic pages, and Reddit-seeding. Verify
 against current sources — the landscape moves fast.
+
+## License
+
+[MIT](./LICENSE) © [Doug Silkstone / withseismic](https://withseismic.com)
+
+---
+
+<p align="center">
+  Built by <a href="https://withseismic.com"><strong>withseismic</strong></a> —
+  growth engineering for teams that ship.<br/>
+  <a href="https://www.npmjs.com/package/@withseismic/geo-kit">npm</a> ·
+  <a href="https://github.com/dougwithseismic/geo-kit/issues">issues</a> ·
+  <a href="https://withseismic.com">withseismic.com</a>
+</p>

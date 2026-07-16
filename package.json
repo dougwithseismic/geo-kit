@@ -57,6 +57,7 @@
     "user-acquisition"
   ],
   "license": "MIT",
+  "author": "Doug Silkstone (https://withseismic.com)",
   "dependencies": {
     "croner": "^10.0.1"
   },
