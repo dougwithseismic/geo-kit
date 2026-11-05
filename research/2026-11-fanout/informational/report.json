@@ -1,0 +1,1299 @@
+{
+  "generatedAt": "2026-11-05T10:13:44.230Z",
+  "summaries": [
+    {
+      "engine": "claude",
+      "runs": 30,
+      "failedRuns": 0,
+      "runsWithSearch": 30,
+      "queries": 88,
+      "searchCalls": 88,
+      "avgQueriesPerRun": 2.9,
+      "avgFetchesPerRun": 4.8,
+      "labelShare": {
+        "other": 0.443,
+        "pricing": 0.261,
+        "spec/feature": 0.193,
+        "comparison": 0.114,
+        "or-list": 0.034,
+        "head": 0.023,
+        "location-check": 0.011,
+        "proof:reviews": 0.011
+      },
+      "labelRunShare": {
+        "other": 0.8,
+        "spec/feature": 0.4,
+        "pricing": 0.367,
+        "comparison": 0.267,
+        "head": 0.067,
+        "or-list": 0.067,
+        "location-check": 0.033,
+        "proof:reviews": 0.033
+      },
+      "yearShare": 0.318,
+      "recencyWordShare": 0.011,
+      "runsWithYearShare": 0.433,
+      "restatementShare": 0.08,
+      "topTemplates": [
+        [
+          "{term}",
+          3
+        ],
+        [
+          "{name-list} {term} what to check before signing cancel charges disbursements",
+          1
+        ],
+        [
+          "{name} {term} {year} 27 late payment penalty first penalty waived 30 days concession govuk penalties guidance",
+          1
+        ],
+        [
+          "{name} {term} degradation rate per year {year} {name} analysis {name} {term} warranty 8 years 100000 miles replacement rate {name}",
+          1
+        ],
+        [
+          "{name} {term} epithelium healing pain first days vision stabilizes months {name} of {name}",
+          1
+        ],
+        [
+          "{name} {term} medical {term} claims paid people covered {term} {year} record number {name} market size",
+          1
+        ],
+        [
+          "{name} {term} medical {term} complaints moratorium preexisting condition chronic acute {term} we handle",
+          1
+        ],
+        [
+          "{name} {term} personal contract hire vs {name} guide early termination cost {name}",
+          1
+        ],
+        [
+          "{name} {term} replacement rates percentage of {name} replaced outside recall",
+          1
+        ],
+        [
+          "{name} {term} timeline {term} to expect {term} first 24 hours week month",
+          1
+        ],
+        [
+          "{name} {term} to claim call before treatment preauthorisation {name} referral open referral approved consultants hospital list",
+          1
+        ],
+        [
+          "{name} {year} {name} reforms cancelled cash {name} limit stays £20000 {name}",
+          1
+        ],
+        [
+          "{name} {year} {term} guideline recommendations adults under 75 empiric supplementation",
+          1
+        ],
+        [
+          "{name} benchmarks {year} average {term} per click {term} per lead by industry",
+          1
+        ],
+        [
+          "{name} bulk sender requirements {name} oneclick unsubscribe spam rate 03 automated {term} deliverability",
+          1
+        ],
+        [
+          "{name} consumer guide vehicle {term} early termination wear and tear fees gap insurance",
+          1
+        ],
+        [
+          "{name} daily budget can spend up to twice average daily budget monthly limit 304 help",
+          1
+        ],
+        [
+          "{name} hours of instruction per {name} level {name} {term} {name} recommended hours",
+          1
+        ],
+        [
+          "{name} language learning timeline {term} 2430 weeks 600750 class hours stategov assumptions 25 hours class per week",
+          1
+        ],
+        [
+          "{name} mandatory payrolling of benefits {term} kind {name} {year} delayed medical {term} {name}",
+          1
+        ],
+        [
+          "{name} patients who pay for additional {term} care guidance switch between {name} and {term} {name} referral emergency",
+          1
+        ],
+        [
+          "{name} reform {year} consultation charge on interest cash held in {term} {name} 22 qualifying investments cashlike",
+          1
+        ],
+        [
+          "{name} small incision lenticule extraction versus {name} visual {term} dry {term} metaanalysis postoperative",
+          1
+        ],
+        [
+          "{name} study {name} batteries realworld driving {term} 40 longer {name} federal {name} {term} warranty 8 years 100000 miles {name} typical 70 capacity",
+          1
+        ],
+        [
+          "{name} vs {name} vs {name} {term} time comparison visual {term} return to work",
+          1
+        ]
+      ],
+      "topFetchedDomains": [
+        [
+          "gov.uk",
+          9
+        ],
+        [
+          "nhs.uk",
+          4
+        ],
+        [
+          "moneyhelper.org.uk",
+          3
+        ],
+        [
+          "bls.gov",
+          2
+        ],
+        [
+          "which.co.uk",
+          2
+        ],
+        [
+          "aao.org",
+          1
+        ],
+        [
+          "acas.org.uk",
+          1
+        ],
+        [
+          "ahrefs.com",
+          1
+        ],
+        [
+          "anthonygold.co.uk",
+          1
+        ],
+        [
+          "arxiv.org",
+          1
+        ],
+        [
+          "assembly.ny.gov",
+          1
+        ],
+        [
+          "axahealth.co.uk",
+          1
+        ],
+        [
+          "bankofscotland.co.uk",
+          1
+        ],
+        [
+          "basingstoke.gov.uk",
+          1
+        ],
+        [
+          "britannica.com",
+          1
+        ],
+        [
+          "british-business-bank.co.uk",
+          1
+        ],
+        [
+          "brownejacobson.com",
+          1
+        ],
+        [
+          "bupa.co.uk",
+          1
+        ],
+        [
+          "c3.eecs.umich.edu",
+          1
+        ],
+        [
+          "capitalone.com",
+          1
+        ],
+        [
+          "checkmyfile.com",
+          1
+        ],
+        [
+          "choose.co.uk",
+          1
+        ],
+        [
+          "commonslibrary.parliament.uk",
+          1
+        ],
+        [
+          "covermagazine.co.uk",
+          1
+        ],
+        [
+          "davidsonmorris.com",
+          1
+        ]
+      ],
+      "topResultDomains": [
+        [
+          "gov.uk",
+          5
+        ],
+        [
+          "face.meei.harvard.edu",
+          3
+        ],
+        [
+          "learnsignal.com",
+          3
+        ],
+        [
+          "legislation.gov.uk",
+          3
+        ],
+        [
+          "mondaq.com",
+          3
+        ],
+        [
+          "moneysupermarket.com",
+          3
+        ],
+        [
+          "accotax.co.uk",
+          2
+        ],
+        [
+          "assets.publishing.service.gov.uk",
+          2
+        ],
+        [
+          "att.org.uk",
+          2
+        ],
+        [
+          "beancount.io",
+          2
+        ],
+        [
+          "cityam.com",
+          2
+        ],
+        [
+          "comparethemarket.com",
+          2
+        ],
+        [
+          "designrush.com",
+          2
+        ],
+        [
+          "emeritus.org",
+          2
+        ],
+        [
+          "finder.com",
+          2
+        ],
+        [
+          "fuseenergy.com",
+          2
+        ],
+        [
+          "grandavehousing.calpoly.edu",
+          2
+        ],
+        [
+          "hrreview.co.uk",
+          2
+        ],
+        [
+          "image-ppubs.uspto.gov",
+          2
+        ],
+        [
+          "inkl.com",
+          2
+        ],
+        [
+          "kaeltripton.com",
+          2
+        ],
+        [
+          "moneyexpert.com",
+          2
+        ],
+        [
+          "mumsnet.com",
+          2
+        ],
+        [
+          "nerdwallet.com",
+          2
+        ],
+        [
+          "newcastle.co.uk",
+          2
+        ]
+      ],
+      "topEntities": [
+        [
+          "April",
+          2
+        ],
+        [
+          "MoneyHelper",
+          2
+        ],
+        [
+          "A1 A2 B1 B2 C1 C2 Spanish DELE",
+          1
+        ],
+        [
+          "ABI",
+          1
+        ],
+        [
+          "American Academy",
+          1
+        ],
+        [
+          "ATE",
+          1
+        ],
+        [
+          "Autumn Budget",
+          1
+        ],
+        [
+          "BLS",
+          1
+        ],
+        [
+          "British",
+          1
+        ],
+        [
+          "British Business Bank",
+          1
+        ],
+        [
+          "Budget",
+          1
+        ],
+        [
+          "Bupa",
+          1
+        ],
+        [
+          "CEFR",
+          1
+        ],
+        [
+          "CFPB",
+          1
+        ],
+        [
+          "Citizens Advice",
+          1
+        ],
+        [
+          "COP",
+          1
+        ],
+        [
+          "CPA",
+          1
+        ],
+        [
+          "CPR",
+          1
+        ],
+        [
+          "Employment Rights Act",
+          1
+        ],
+        [
+          "Endocrine Society",
+          1
+        ],
+        [
+          "Energy Saving Trust",
+          1
+        ],
+        [
+          "EU UK",
+          1
+        ],
+        [
+          "EV",
+          1
+        ],
+        [
+          "EVs",
+          1
+        ],
+        [
+          "Financial Ombudsman Service",
+          1
+        ]
+      ],
+      "topModifiers": [
+        [
+          "0 vat mcs planning permission average cost 4kw system seasonal output winter vs summer",
+          1
+        ],
+        [
+          "27 late payment penalty first penalty waived 30 days concession govuk penalty guidance",
+          1
+        ],
+        [
+          "600750 class hour level",
+          1
+        ],
+        [
+          "active control limitation low frequency latency passive isolation high frequency adaptive filter explained",
+          1
+        ],
+        [
+          "active headphone feedforward feedback destructive interference",
+          1
+        ],
+        [
+          "agreement credit check long valid",
+          1
+        ],
+        [
+          "allowance 27 rule",
+          1
+        ],
+        [
+          "automated flow vs campaign performance statistic revenue per recipient open rate benchmark",
+          1
+        ],
+        [
+          "automatically reason qualifying period",
+          1
+        ],
+        [
+          "bedroom kw combi system",
+          1
+        ],
+        [
+          "benchmark average per click per lead industry",
+          1
+        ],
+        [
+          "bulk sender requirement oneclick unsubscribe spam rate 03 automated deliverability",
+          1
+        ],
+        [
+          "cash limit £12000 change under 65 rule",
+          1
+        ],
+        [
+          "claim call before treatment preauthorisation referral open referral approved consultant hospital list",
+          1
+        ],
+        [
+          "coefficient performance cold climate efficiency defrost cycle",
+          1
+        ],
+        [
+          "conditional success cap",
+          1
+        ],
+        [
+          "consumer guide vehicle early termination wear tear fees gap insurance",
+          1
+        ],
+        [
+          "convection heating element fan reaction",
+          1
+        ],
+        [
+          "customer relationship management type operational analytical collaborative software work contact pipeline automation",
+          1
+        ],
+        [
+          "daily budget can spend up twice average daily budget monthly limit 304 help",
+          1
+        ],
+        [
+          "degradation rate per year analysi warranty 8 year 100000 mile replacement rate",
+          1
+        ],
+        [
+          "employment tribunal time limit six month commencement date 2026 2027",
+          1
+        ],
+        [
+          "epithelium healing pain first days vision stabilize month",
+          1
+        ],
+        [
+          "explained",
+          1
+        ],
+        [
+          "explained money factor residual value capitalized cost",
+          1
+        ]
+      ],
+      "topSiteScoped": [],
+      "topFirstCallEntities": [
+        [
+          "CEFR",
+          1
+        ],
+        [
+          "Income Tax",
+          1
+        ],
+        [
+          "IPO",
+          1
+        ],
+        [
+          "LASIK",
+          1
+        ],
+        [
+          "Maillard",
+          1
+        ],
+        [
+          "NIH RDA IU",
+          1
+        ],
+        [
+          "Paris Eurostar",
+          1
+        ],
+        [
+          "Right Start",
+          1
+        ],
+        [
+          "Smart Export Guarantee",
+          1
+        ],
+        [
+          "Spanish FSI",
+          1
+        ],
+        [
+          "T Level UK",
+          1
+        ],
+        [
+          "UCAS",
+          1
+        ]
+      ],
+      "costUsd": 0
+    },
+    {
+      "engine": "codex",
+      "runs": 30,
+      "failedRuns": 0,
+      "runsWithSearch": 30,
+      "queries": 97,
+      "searchCalls": 47,
+      "avgQueriesPerRun": 3.2,
+      "avgFetchesPerRun": 0.8,
+      "labelShare": {
+        "site-scoped": 0.959,
+        "pricing": 0.144,
+        "spec/feature": 0.124,
+        "location-check": 0.01,
+        "other": 0.01,
+        "proof:case-study": 0.01
+      },
+      "labelRunShare": {
+        "site-scoped": 0.967,
+        "pricing": 0.2,
+        "spec/feature": 0.2,
+        "location-check": 0.033,
+        "other": 0.033,
+        "proof:case-study": 0.033
+      },
+      "yearShare": 0.113,
+      "recencyWordShare": 0.01,
+      "runsWithYearShare": 0.267,
+      "restatementShare": 0,
+      "topTemplates": [
+        [
+          "{site} {term}",
+          5
+        ],
+        [
+          "{site} {name}",
+          3
+        ],
+        [
+          "{name} {term} costs monthly budget management fees {year}",
+          1
+        ],
+        [
+          "{site} {name} {term} {name} {year} 25 future pecuniary loss {name}",
+          1
+        ],
+        [
+          "{site} {name} {term} 24 weeks 600 750 class hours",
+          1
+        ],
+        [
+          "{site} {name} {term} should i expect {term}",
+          1
+        ],
+        [
+          "{site} {name} global scale {name} interaction fluency spontaneity",
+          1
+        ],
+        [
+          "{site} {term} {name} {term} {year} 2027 2028 qualifying income",
+          1
+        ],
+        [
+          "{site} {term} {name} consumers adults 600 800 {name} upper limit 4000",
+          1
+        ],
+        [
+          "{site} {term} {name} passport {term}",
+          1
+        ],
+        [
+          "{site} {term} a {term} it {term} mileage end lease",
+          1
+        ],
+        [
+          "{site} {term} a {term} personal contract hire {term} it works",
+          1
+        ],
+        [
+          "{site} {term} adults 10 micrograms daily autumn winter",
+          1
+        ],
+        [
+          "{site} {term} agreement {term} credit check",
+          1
+        ],
+        [
+          "{site} {term} asset based lending explained",
+          1
+        ],
+        [
+          "{site} {term} bedroom {term} bathrooms radiators kw",
+          1
+        ],
+        [
+          "{site} {term} bedroom {term} combi system heat only kw",
+          1
+        ],
+        [
+          "{site} {term} boots snug not painful {term} time",
+          1
+        ],
+        [
+          "{site} {term} canceling function low frequency human voices",
+          1
+        ],
+        [
+          "{site} {term} claim pay hospital directly excess",
+          1
+        ],
+        [
+          "{site} {term} client costs",
+          1
+        ],
+        [
+          "{site} {term} condensation penetrating rising {term} home",
+          1
+        ],
+        [
+          "{site} {term} conditional {term} success {term} costs",
+          1
+        ],
+        [
+          "{site} {term} consent suppressed profiles unsubscribe {term} flows",
+          1
+        ],
+        [
+          "{site} {term} cost age location excess claims renewal",
+          1
+        ]
+      ],
+      "topFetchedDomains": [
+        [
+          "gov.uk",
+          4
+        ],
+        [
+          "aat.org.uk",
+          1
+        ],
+        [
+          "afdc.energy.gov",
+          1
+        ],
+        [
+          "british-business-bank.co.uk",
+          1
+        ],
+        [
+          "developers.google.com",
+          1
+        ],
+        [
+          "domesticappliances.philips.co.in",
+          1
+        ],
+        [
+          "energy.gov",
+          1
+        ],
+        [
+          "energysavingtrust.org.uk",
+          1
+        ],
+        [
+          "eurostar.com",
+          1
+        ],
+        [
+          "hubspot.com",
+          1
+        ],
+        [
+          "iea.org",
+          1
+        ],
+        [
+          "mailchimp.com",
+          1
+        ],
+        [
+          "moneyhelper.org.uk",
+          1
+        ],
+        [
+          "ods.od.nih.gov",
+          1
+        ],
+        [
+          "ofcom.org.uk",
+          1
+        ],
+        [
+          "pmi.org",
+          1
+        ],
+        [
+          "rcophth.ac.uk",
+          1
+        ],
+        [
+          "rei.com",
+          1
+        ],
+        [
+          "sony.com",
+          1
+        ],
+        [
+          "travel-europe.europa.eu",
+          1
+        ],
+        [
+          "viessmann.co.uk",
+          1
+        ],
+        [
+          "wordstream.com",
+          1
+        ]
+      ],
+      "topResultDomains": [
+        [
+          "en.wikipedia.org",
+          28
+        ],
+        [
+          "reddit.com",
+          28
+        ],
+        [
+          "gov.uk",
+          13
+        ],
+        [
+          "assets.publishing.service.gov.uk",
+          8
+        ],
+        [
+          "techradar.com",
+          8
+        ],
+        [
+          "moneysavingexpert.com",
+          6
+        ],
+        [
+          "which.co.uk",
+          5
+        ],
+        [
+          "moneyhelper.org.uk",
+          4
+        ],
+        [
+          "tomsguide.com",
+          4
+        ],
+        [
+          "youtube.com",
+          4
+        ],
+        [
+          "energysavingtrust.org.uk",
+          3
+        ],
+        [
+          "financial.org.uk",
+          3
+        ],
+        [
+          "legislation.gov.uk",
+          3
+        ],
+        [
+          "moneyweek.com",
+          3
+        ],
+        [
+          "questions-statements.parliament.uk",
+          3
+        ],
+        [
+          "researchbriefings.files.parliament.uk",
+          3
+        ],
+        [
+          "aat.org.uk",
+          2
+        ],
+        [
+          "arxiv.org",
+          2
+        ],
+        [
+          "business.gov.uk",
+          2
+        ],
+        [
+          "cdc.gov",
+          2
+        ],
+        [
+          "citizensadvice.org.uk",
+          2
+        ],
+        [
+          "committees.parliament.uk",
+          2
+        ],
+        [
+          "commonslibrary.parliament.uk",
+          2
+        ],
+        [
+          "consumer.ftc.gov",
+          2
+        ],
+        [
+          "energy.gov",
+          2
+        ]
+      ],
+      "topEntities": [
+        [
+          "70",
+          1
+        ],
+        [
+          "A1 A2 B1 B2",
+          1
+        ],
+        [
+          "B1 B2",
+          1
+        ],
+        [
+          "CEFR",
+          1
+        ],
+        [
+          "Companies House",
+          1
+        ],
+        [
+          "Conditional Fee Agreements Order",
+          1
+        ],
+        [
+          "CPC Google Ads WordStream",
+          1
+        ],
+        [
+          "currently not in operation",
+          1
+        ],
+        [
+          "does not",
+          1
+        ],
+        [
+          "England",
+          1
+        ],
+        [
+          "ETIAS British",
+          1
+        ],
+        [
+          "ETIAS travel authorisation is linked",
+          1
+        ],
+        [
+          "EUR 20",
+          1
+        ],
+        [
+          "EV",
+          1
+        ],
+        [
+          "Foreign Service Institute Spanish",
+          1
+        ],
+        [
+          "ISA",
+          1
+        ],
+        [
+          "IU",
+          1
+        ],
+        [
+          "LASIK",
+          1
+        ],
+        [
+          "LASIK SMILE PRK",
+          1
+        ],
+        [
+          "Maillard",
+          1
+        ],
+        [
+          "Making Tax Digital Income Tax",
+          1
+        ],
+        [
+          "NHS",
+          1
+        ],
+        [
+          "not refundable",
+          1
+        ],
+        [
+          "November",
+          1
+        ],
+        [
+          "six months",
+          1
+        ]
+      ],
+      "topModifiers": [
+        [
+          "2027 2028 qualifying income",
+          1
+        ],
+        [
+          "24 week 600 750 class hour",
+          1
+        ],
+        [
+          "25 future pecuniary loss",
+          1
+        ],
+        [
+          "adult 10 microgram daily autumn winter",
+          1
+        ],
+        [
+          "agreement credit check",
+          1
+        ],
+        [
+          "agreement not commit rate",
+          1
+        ],
+        [
+          "airfryer it work hot",
+          1
+        ],
+        [
+          "asset based lending explained",
+          1
+        ],
+        [
+          "average 2025 benchmark",
+          1
+        ],
+        [
+          "bedroom bathroom radiator kw",
+          1
+        ],
+        [
+          "bedroom combi system heat only kw",
+          1
+        ],
+        [
+          "beginner lesson boot arrive",
+          1
+        ],
+        [
+          "boot snug not painful time",
+          1
+        ],
+        [
+          "canceling function low frequency human voice",
+          1
+        ],
+        [
+          "claim pay hospital directly excess",
+          1
+        ],
+        [
+          "client cost",
+          1
+        ],
+        [
+          "condensation penetrating rising home",
+          1
+        ],
+        [
+          "conditional success cost",
+          1
+        ],
+        [
+          "consent suppressed profile unsubscribe flow",
+          1
+        ],
+        [
+          "consumer adult 600 800 upper limit 4000",
+          1
+        ],
+        [
+          "cost age location excess claim renewal",
+          1
+        ],
+        [
+          "cost monthly budget management fees",
+          1
+        ],
+        [
+          "decision long valid",
+          1
+        ],
+        [
+          "degradation annual 23",
+          1
+        ],
+        [
+          "discrimination no length service wrongful",
+          1
+        ]
+      ],
+      "topSiteScoped": [
+        [
+          "gov.uk",
+          9
+        ],
+        [
+          "moneyhelper.org.uk",
+          4
+        ],
+        [
+          "nhs.uk",
+          4
+        ],
+        [
+          "energysavingtrust.org.uk",
+          3
+        ],
+        [
+          "energy.gov",
+          2
+        ],
+        [
+          "aad.org",
+          1
+        ],
+        [
+          "aat.org.uk",
+          1
+        ],
+        [
+          "abi.org.uk",
+          1
+        ],
+        [
+          "acas.org.uk",
+          1
+        ],
+        [
+          "accaglobal.com",
+          1
+        ],
+        [
+          "acs.org",
+          1
+        ],
+        [
+          "ahrefs.com",
+          1
+        ],
+        [
+          "apm.org.uk",
+          1
+        ],
+        [
+          "aviva.co.uk",
+          1
+        ],
+        [
+          "bbcgoodfood.com",
+          1
+        ],
+        [
+          "bose.com",
+          1
+        ],
+        [
+          "british-business-bank.co.uk",
+          1
+        ],
+        [
+          "bupa.co.uk",
+          1
+        ],
+        [
+          "business.google.com",
+          1
+        ],
+        [
+          "cervantes.es",
+          1
+        ],
+        [
+          "coe.int",
+          1
+        ],
+        [
+          "consumerfinance.gov",
+          1
+        ],
+        [
+          "developers.google.com",
+          1
+        ],
+        [
+          "eurostar.com",
+          1
+        ],
+        [
+          "fca.org.uk",
+          1
+        ]
+      ],
+      "topFirstCallEntities": [
+        [
+          "A1 A2 B1 B2",
+          1
+        ],
+        [
+          "CPC Google Ads WordStream",
+          1
+        ],
+        [
+          "England",
+          1
+        ],
+        [
+          "ETIAS British",
+          1
+        ],
+        [
+          "EV",
+          1
+        ],
+        [
+          "Foreign Service Institute Spanish",
+          1
+        ],
+        [
+          "ISA",
+          1
+        ],
+        [
+          "IU",
+          1
+        ],
+        [
+          "LASIK",
+          1
+        ],
+        [
+          "LASIK SMILE PRK",
+          1
+        ],
+        [
+          "Maillard",
+          1
+        ],
+        [
+          "Making Tax Digital Income Tax",
+          1
+        ],
+        [
+          "NHS",
+          1
+        ],
+        [
+          "T Levels",
+          1
+        ],
+        [
+          "Vitamin D Fact Sheet",
+          1
+        ]
+      ],
+      "costUsd": 0
+    }
+  ],
+  "agreement": {
+    "terms": 30,
+    "meanFetchedDomainJaccard": 0.183,
+    "meanEntityJaccard": 0.071
+  }
+}

@@ -1,0 +1,52 @@
+# 30 informational, top-of-funnel terms: 3 in each of the 10 verticals used by
+# commercial-uk-100.txt, on the same topics. No years, and none start with "best".
+
+# Agencies & B2B services
+what does an seo agency actually do
+how much does ppc advertising cost a small business
+what is the difference between a bookkeeper and an accountant
+
+# Software / SaaS
+what is a crm and how does it work
+how does email marketing automation work
+what is making tax digital for sole traders
+
+# Money & finance
+how do stocks and shares isas work
+what is invoice finance
+how does a mortgage in principle work
+
+# Consumer products
+how do air fryers work
+what causes damp and mould in a house
+how does noise cancelling work
+
+# Travel
+what is etias and do uk travellers need it
+how long does it take to get from london to paris by train
+how to prepare for a first ski trip
+
+# Home services & property
+how does a heat pump work
+how do solar panels work in the uk
+what size boiler do i need for a 3 bed house
+
+# Health & wellness
+how much vitamin d do i need a day
+what is recovery like after laser eye surgery
+how does private health insurance work in the uk
+
+# Education & careers
+what is a t level
+how long does it take to learn spanish
+what does a project manager do
+
+# Legal & professional
+what counts as unfair dismissal
+how does a no win no fee agreement work
+how do i register a trademark in the uk
+
+# Automotive, energy & telecom
+how long does an electric car battery last
+what is a sim only deal
+how does car leasing work

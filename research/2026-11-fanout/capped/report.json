@@ -1,0 +1,333 @@
+{
+  "generatedAt": "2026-11-05T10:00:56.845Z",
+  "summaries": [
+    {
+      "engine": "claude",
+      "runs": 10,
+      "failedRuns": 0,
+      "runsWithSearch": 10,
+      "queries": 20,
+      "searchCalls": 20,
+      "avgQueriesPerRun": 2,
+      "avgFetchesPerRun": 0.7,
+      "labelShare": {
+        "head": 0.5,
+        "pricing": 0.2,
+        "other": 0.15,
+        "proof:case-study": 0.15,
+        "comparison": 0.05,
+        "or-list": 0.05,
+        "proof:awards": 0.05,
+        "proof:reviews": 0.05
+      },
+      "labelRunShare": {
+        "head": 0.9,
+        "other": 0.3,
+        "pricing": 0.3,
+        "proof:case-study": 0.2,
+        "comparison": 0.1,
+        "or-list": 0.1,
+        "proof:awards": 0.1,
+        "proof:reviews": 0.1
+      },
+      "yearShare": 0.5,
+      "recencyWordShare": 0,
+      "runsWithYearShare": 0.9,
+      "restatementShare": 0.45,
+      "topTemplates": [
+        [
+          "{term} {year}",
+          3
+        ],
+        [
+          "{term}",
+          2
+        ],
+        [
+          "best {term} {year}",
+          2
+        ],
+        [
+          "{name} studio OR {name-list} {term} brand design {term} {name}",
+          1
+        ],
+        [
+          "{term} {name} {year}",
+          1
+        ],
+        [
+          "{term} {name} demand generation",
+          1
+        ],
+        [
+          "{term} brands",
+          1
+        ],
+        [
+          "{term} clients {name} organic search {term}",
+          1
+        ],
+        [
+          "{term} consumer goods food drink brands case studies",
+          1
+        ],
+        [
+          "{term} pricing {year}",
+          1
+        ],
+        [
+          "{term} website cost £ {term} designer {year}",
+          1
+        ],
+        [
+          "best {term} packaging design agencies {term} {year}",
+          1
+        ],
+        [
+          "best online {term} services {term} {name} monthly price",
+          1
+        ],
+        [
+          "contractor accountants comparison review {name} fees",
+          1
+        ],
+        [
+          "specialist {term} engineering recruiters {term} {name}",
+          1
+        ],
+        [
+          "top {term} {name} {term} agencies awards {year}",
+          1
+        ]
+      ],
+      "topFetchedDomains": [
+        [
+          "blendb2b.com",
+          1
+        ],
+        [
+          "cloudtango.net",
+          1
+        ],
+        [
+          "clutch.co",
+          1
+        ],
+        [
+          "contractoruk.com",
+          1
+        ],
+        [
+          "impressiondigital.com",
+          1
+        ],
+        [
+          "siliconcanals.com",
+          1
+        ],
+        [
+          "varn.co.uk",
+          1
+        ]
+      ],
+      "topResultDomains": [
+        [
+          "clutch.co",
+          7
+        ],
+        [
+          "designrush.com",
+          5
+        ],
+        [
+          "webtonic.io",
+          4
+        ],
+        [
+          "agencies.semrush.com",
+          3
+        ],
+        [
+          "feedbax.ai",
+          3
+        ],
+        [
+          "techbullion.com",
+          3
+        ],
+        [
+          "accountingweb.co.uk",
+          2
+        ],
+        [
+          "capterra.co.uk",
+          2
+        ],
+        [
+          "cdn2.securitysenses.com",
+          2
+        ],
+        [
+          "crunch.co.uk",
+          2
+        ],
+        [
+          "ecommercefastlane.com",
+          2
+        ],
+        [
+          "hireinsouth.com",
+          2
+        ],
+        [
+          "madebyshape.co.uk",
+          2
+        ],
+        [
+          "magier.com",
+          2
+        ],
+        [
+          "parkmagazineny.com",
+          2
+        ],
+        [
+          "sleek.com",
+          2
+        ],
+        [
+          "thesocialshepherd.com",
+          2
+        ],
+        [
+          "absolute.digital",
+          1
+        ],
+        [
+          "accounts-os.com",
+          1
+        ],
+        [
+          "adriasolutions.co.uk",
+          1
+        ],
+        [
+          "agencyapp.dmbx.aws.gartner.com",
+          1
+        ],
+        [
+          "agencycentral.co.uk",
+          1
+        ],
+        [
+          "amzdudes.com",
+          1
+        ],
+        [
+          "antal.com",
+          1
+        ],
+        [
+          "axel-portfolio.pages.dev",
+          1
+        ]
+      ],
+      "topEntities": [
+        [
+          "B&B",
+          1
+        ],
+        [
+          "Crunch Gorilla Nixon Williams SJD Intouch",
+          1
+        ],
+        [
+          "Crunch Mazuma Sleek",
+          1
+        ],
+        [
+          "Google Shopping PPC",
+          1
+        ],
+        [
+          "London",
+          1
+        ],
+        [
+          "London Leeds",
+          1
+        ],
+        [
+          "Pearlfisher",
+          1
+        ],
+        [
+          "Robot Food",
+          1
+        ],
+        [
+          "UK London Client Server Burns Sheehan Hunter Bond",
+          1
+        ],
+        [
+          "Unilever Diageo Nestle",
+          1
+        ]
+      ],
+      "topModifiers": [
+        [
+          "award",
+          1
+        ],
+        [
+          "brand",
+          1
+        ],
+        [
+          "client organic search",
+          1
+        ],
+        [
+          "consumer good food drink brand case study",
+          1
+        ],
+        [
+          "contractor accountant comparison review fees",
+          1
+        ],
+        [
+          "demand generation",
+          1
+        ],
+        [
+          "online service monthly price",
+          1
+        ],
+        [
+          "packaging design",
+          1
+        ],
+        [
+          "pricing",
+          1
+        ],
+        [
+          "specialist engineering recruiter",
+          1
+        ],
+        [
+          "studio brand design",
+          1
+        ],
+        [
+          "website cost £ designer",
+          1
+        ]
+      ],
+      "topSiteScoped": [],
+      "topFirstCallEntities": [],
+      "costUsd": 0
+    }
+  ],
+  "agreement": null
+}
