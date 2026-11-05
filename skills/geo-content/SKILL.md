@@ -17,6 +17,14 @@ present, use them.
   hard-code these.
 - Real facts: names, prices, places, dates, and **genuine sourced statistics**.
   Never invent a statistic or a source.
+- **What does the page have that the things it covers don't?** Agents skip a
+  guide and open the venue, product or official page directly unless the guide
+  holds something extra: prices checked on a stated date, verified hours,
+  first-hand notes, a comparison table, the site's own data. Put that in the
+  title and meta description too, since that's what the agent sees before
+  deciding to open the page.
+- **Year:** agents add the current year to most searches unprompted. Keep it in
+  the title of anything time-sensitive, and refresh it with real changes.
 
 ## The required structure (every page)
 

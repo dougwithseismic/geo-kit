@@ -1,0 +1,1022 @@
+{
+  "site": "dinnerswithfriends.co.uk",
+  "runs": [
+    {
+      "engine": "claude",
+      "term": "best afternoon tea in exeter",
+      "queries": 6,
+      "seen": false,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "claude",
+      "term": "best pubs in exeter",
+      "queries": 4,
+      "seen": false,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "claude",
+      "term": "meet new people in exeter",
+      "queries": 7,
+      "seen": false,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "claude",
+      "term": "what is a supper club",
+      "queries": 1,
+      "seen": false,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "claude",
+      "term": "christmas events exeter",
+      "queries": 2,
+      "seen": false,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "claude",
+      "term": "how to make friends as an adult in the uk",
+      "queries": 7,
+      "seen": false,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "claude",
+      "term": "best cocktail bars in exeter",
+      "queries": 5,
+      "seen": false,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "claude",
+      "term": "pub quiz exeter",
+      "queries": 4,
+      "seen": false,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "claude",
+      "term": "how to make friends in exeter",
+      "queries": 6,
+      "seen": false,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "claude",
+      "term": "magdalen road exeter",
+      "queries": 4,
+      "seen": false,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "claude",
+      "term": "things to do in exeter",
+      "queries": 4,
+      "seen": false,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "claude",
+      "term": "best neighbourhoods to live in exeter",
+      "queries": 3,
+      "seen": false,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "claude",
+      "term": "board game cafe exeter",
+      "queries": 4,
+      "seen": false,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "claude",
+      "term": "best thai restaurant in exeter",
+      "queries": 3,
+      "seen": false,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "claude",
+      "term": "best locksmith in exeter",
+      "queries": 5,
+      "seen": false,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "claude",
+      "term": "new years eve exeter",
+      "queries": 6,
+      "seen": false,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "claude",
+      "term": "best restaurants in topsham",
+      "queries": 5,
+      "seen": false,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "claude",
+      "term": "dog friendly restaurants in exeter",
+      "queries": 5,
+      "seen": false,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "claude",
+      "term": "best breakfast in exeter",
+      "queries": 3,
+      "seen": false,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "claude",
+      "term": "supper clubs in devon",
+      "queries": 5,
+      "seen": false,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "claude",
+      "term": "things to do in exeter this weekend",
+      "queries": 11,
+      "seen": false,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "claude",
+      "term": "when does exeter christmas market start",
+      "queries": 1,
+      "seen": false,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "claude",
+      "term": "best italian restaurant in exeter",
+      "queries": 3,
+      "seen": false,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "claude",
+      "term": "social clubs for over 50s in exeter",
+      "queries": 9,
+      "seen": false,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "claude",
+      "term": "running clubs exeter",
+      "queries": 5,
+      "seen": false,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "claude",
+      "term": "best sunday roast in exeter",
+      "queries": 4,
+      "seen": false,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "claude",
+      "term": "best fish and chips in exeter",
+      "queries": 6,
+      "seen": false,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "claude",
+      "term": "exeter christmas market 2026 dates",
+      "queries": 1,
+      "seen": false,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "claude",
+      "term": "social groups in exeter",
+      "queries": 5,
+      "seen": false,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "claude",
+      "term": "pottery painting in exeter",
+      "queries": 4,
+      "seen": false,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "codex",
+      "term": "best afternoon tea in exeter",
+      "queries": 4,
+      "seen": true,
+      "seenAt": 7,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "codex",
+      "term": "best breakfast in exeter",
+      "queries": 5,
+      "seen": true,
+      "seenAt": 1,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": [
+        "thedaisycafe.co.uk"
+      ]
+    },
+    {
+      "engine": "codex",
+      "term": "best cocktail bars in exeter",
+      "queries": 9,
+      "seen": true,
+      "seenAt": 1,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "codex",
+      "term": "best fish and chips in exeter",
+      "queries": 4,
+      "seen": true,
+      "seenAt": 1,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "codex",
+      "term": "best italian restaurant in exeter",
+      "queries": 6,
+      "seen": true,
+      "seenAt": 5,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "codex",
+      "term": "best locksmith in exeter",
+      "queries": 7,
+      "seen": true,
+      "seenAt": 1,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": [
+        "locksmiths.co.uk"
+      ]
+    },
+    {
+      "engine": "codex",
+      "term": "best neighbourhoods to live in exeter",
+      "queries": 12,
+      "seen": false,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": [
+        "exeter.gov.uk",
+        "visitexeter.com",
+        "rightmove.co.uk",
+        "gov.uk"
+      ]
+    },
+    {
+      "engine": "codex",
+      "term": "best pubs in exeter",
+      "queries": 4,
+      "seen": true,
+      "seenAt": 4,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "codex",
+      "term": "best restaurants in topsham",
+      "queries": 9,
+      "seen": true,
+      "seenAt": 1,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": [
+        "guide.michelin.com"
+      ]
+    },
+    {
+      "engine": "codex",
+      "term": "best sunday roast in exeter",
+      "queries": 8,
+      "seen": true,
+      "seenAt": 2,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": [
+        "hourglassexeter.co.uk"
+      ]
+    },
+    {
+      "engine": "codex",
+      "term": "best thai restaurant in exeter",
+      "queries": 4,
+      "seen": true,
+      "seenAt": 3,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "codex",
+      "term": "board game cafe exeter",
+      "queries": 2,
+      "seen": true,
+      "seenAt": 2,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": [
+        "meetup.com"
+      ]
+    },
+    {
+      "engine": "codex",
+      "term": "christmas events exeter",
+      "queries": 9,
+      "seen": false,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": [
+        "exetercornexchange.co.uk",
+        "inexeter.com",
+        "exeter-cathedral.org.uk",
+        "princesshay.co.uk",
+        "exeterphoenix.org.uk"
+      ]
+    },
+    {
+      "engine": "codex",
+      "term": "dog friendly restaurants in exeter",
+      "queries": 6,
+      "seen": false,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": [
+        "millontheexe.com",
+        "phocafe.co.uk",
+        "cosyclub.co.uk",
+        "puertolounge.co.uk",
+        "thelounges.co.uk"
+      ]
+    },
+    {
+      "engine": "codex",
+      "term": "exeter christmas market 2026 dates",
+      "queries": 1,
+      "seen": false,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "codex",
+      "term": "how to make friends as an adult in the uk",
+      "queries": 5,
+      "seen": false,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": [
+        "nhs.uk",
+        "mind.org.uk",
+        "parkrun.org.uk",
+        "gov.uk"
+      ]
+    },
+    {
+      "engine": "codex",
+      "term": "how to make friends in exeter",
+      "queries": 6,
+      "seen": true,
+      "seenAt": 3,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "codex",
+      "term": "magdalen road exeter",
+      "queries": 4,
+      "seen": true,
+      "seenAt": 1,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "codex",
+      "term": "meet new people in exeter",
+      "queries": 11,
+      "seen": true,
+      "seenAt": 3,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": [
+        "exeterivc.org",
+        "meetup.com",
+        "ramblers.org.uk"
+      ]
+    },
+    {
+      "engine": "codex",
+      "term": "new years eve exeter",
+      "queries": 6,
+      "seen": true,
+      "seenAt": 6,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": [
+        "fixr.co",
+        "moveexeter.com"
+      ]
+    },
+    {
+      "engine": "codex",
+      "term": "pottery painting in exeter",
+      "queries": 2,
+      "seen": true,
+      "seenAt": 3,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "codex",
+      "term": "pub quiz exeter",
+      "queries": 3,
+      "seen": true,
+      "seenAt": 6,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "codex",
+      "term": "running clubs exeter",
+      "queries": 4,
+      "seen": true,
+      "seenAt": 10,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": [
+        "exeterharriers.org.uk"
+      ]
+    },
+    {
+      "engine": "codex",
+      "term": "social clubs for over 50s in exeter",
+      "queries": 8,
+      "seen": true,
+      "seenAt": 2,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": [
+        "ageuk.org.uk",
+        "exeterivc.org"
+      ]
+    },
+    {
+      "engine": "codex",
+      "term": "social groups in exeter",
+      "queries": 8,
+      "seen": true,
+      "seenAt": 3,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": [
+        "meetup.com",
+        "exetercct.org",
+        "exeterivc.org"
+      ]
+    },
+    {
+      "engine": "codex",
+      "term": "supper clubs in devon",
+      "queries": 11,
+      "seen": false,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": [
+        "heron-farm.co.uk",
+        "nickpearcecooking.com",
+        "salutationtopsham.co.uk"
+      ]
+    },
+    {
+      "engine": "codex",
+      "term": "things to do in exeter this weekend",
+      "queries": 13,
+      "seen": false,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": [
+        "rammuseum.org.uk",
+        "forestryengland.uk",
+        "brickfestivalevents.com",
+        "exeterphoenix.org.uk"
+      ]
+    },
+    {
+      "engine": "codex",
+      "term": "things to do in exeter",
+      "queries": 7,
+      "seen": false,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": [
+        "visitexeter.com",
+        "exeter-cathedral.org.uk",
+        "rammuseum.org.uk",
+        "exeter.gov.uk",
+        "exeterphoenix.org.uk"
+      ]
+    },
+    {
+      "engine": "codex",
+      "term": "what is a supper club",
+      "queries": 1,
+      "seen": true,
+      "seenAt": 6,
+      "opened": false,
+      "cited": true,
+      "queried": false,
+      "scoped": []
+    },
+    {
+      "engine": "codex",
+      "term": "when does exeter christmas market start",
+      "queries": 1,
+      "seen": false,
+      "opened": false,
+      "cited": false,
+      "queried": false,
+      "scoped": []
+    }
+  ],
+  "engines": [
+    {
+      "engine": "claude",
+      "runs": 30,
+      "seen": 0,
+      "opened": 0,
+      "cited": 0,
+      "queried": 0,
+      "seenFirst": 0,
+      "topOpened": [
+        [
+          "visitexeter.com",
+          10
+        ],
+        [
+          "exeter-cathedral.org.uk",
+          5
+        ],
+        [
+          "thetab.com",
+          4
+        ],
+        [
+          "designmynight.com",
+          2
+        ],
+        [
+          "exeterviews.co.uk",
+          2
+        ],
+        [
+          "greatbritishlife.co.uk",
+          2
+        ],
+        [
+          "hearthomemag.co.uk",
+          2
+        ],
+        [
+          "meetup.com",
+          2
+        ],
+        [
+          "opentable.co.uk",
+          2
+        ],
+        [
+          "stagecoachbus.com",
+          2
+        ],
+        [
+          "theexeterdaily.co.uk",
+          2
+        ],
+        [
+          "afternoontea.co.uk",
+          1
+        ],
+        [
+          "ageuk.org.uk",
+          1
+        ],
+        [
+          "birdeye.com",
+          1
+        ],
+        [
+          "birlandfeasts.co.uk",
+          1
+        ]
+      ],
+      "topSeen": [
+        [
+          "visitexeter.com",
+          19
+        ],
+        [
+          "northdevongazette.co.uk",
+          14
+        ],
+        [
+          "wanderlog.com",
+          10
+        ],
+        [
+          "news.exeter.gov.uk",
+          9
+        ],
+        [
+          "theexeterdaily.co.uk",
+          9
+        ],
+        [
+          "eventbrite.co.uk",
+          8
+        ],
+        [
+          "eventslist.co.uk",
+          8
+        ],
+        [
+          "exeter-cathedral.org.uk",
+          8
+        ],
+        [
+          "mail.eventslist.co.uk",
+          8
+        ],
+        [
+          "opentable.ca",
+          8
+        ],
+        [
+          "opentable.co.uk",
+          8
+        ],
+        [
+          "opentable.com",
+          8
+        ],
+        [
+          "stagecoachbus.com",
+          8
+        ],
+        [
+          "visitsouthdevon.co.uk",
+          8
+        ],
+        [
+          "classic.co.uk",
+          7
+        ]
+      ],
+      "topScoped": []
+    },
+    {
+      "engine": "codex",
+      "runs": 30,
+      "seen": 21,
+      "opened": 0,
+      "cited": 1,
+      "queried": 0,
+      "seenFirst": 6,
+      "topOpened": [
+        [
+          "exeter-cathedral.org.uk",
+          2
+        ],
+        [
+          "arcadiaexeter.com",
+          1
+        ],
+        [
+          "asaplocksmithsexeter.co.uk",
+          1
+        ],
+        [
+          "board.uk",
+          1
+        ],
+        [
+          "dictionary.cambridge.org",
+          1
+        ],
+        [
+          "exeter.u3asite.uk",
+          1
+        ],
+        [
+          "exetercct.org",
+          1
+        ],
+        [
+          "exetercornexchange.co.uk",
+          1
+        ],
+        [
+          "exeteru3a.org.uk",
+          1
+        ],
+        [
+          "exeterwinterwonderland.co.uk",
+          1
+        ],
+        [
+          "fixr.co",
+          1
+        ],
+        [
+          "heron-farm.co.uk",
+          1
+        ],
+        [
+          "ilgrano.co.uk",
+          1
+        ],
+        [
+          "kin-khao.co.uk",
+          1
+        ],
+        [
+          "krispies.co.uk",
+          1
+        ]
+      ],
+      "topSeen": [
+        [
+          "reddit.com",
+          30
+        ],
+        [
+          "en.wikipedia.org",
+          27
+        ],
+        [
+          "visitexeter.com",
+          19
+        ],
+        [
+          "inexeter.co.uk",
+          15
+        ],
+        [
+          "exeterphoenix.org.uk",
+          9
+        ],
+        [
+          "committees.exeter.gov.uk",
+          8
+        ],
+        [
+          "countrylife.co.uk",
+          8
+        ],
+        [
+          "exeter.ac.uk",
+          8
+        ],
+        [
+          "meetup.com",
+          7
+        ],
+        [
+          "roq.app",
+          7
+        ],
+        [
+          "theweek.com",
+          7
+        ],
+        [
+          "visitsouthdevon.co.uk",
+          7
+        ],
+        [
+          "weur-cdn.menuweb.menu",
+          7
+        ],
+        [
+          "exeter-cathedral.org.uk",
+          6
+        ],
+        [
+          "sluurpy.co.uk",
+          6
+        ]
+      ],
+      "topScoped": [
+        [
+          "exeterivc.org",
+          3
+        ],
+        [
+          "exeterphoenix.org.uk",
+          3
+        ],
+        [
+          "meetup.com",
+          3
+        ],
+        [
+          "exeter-cathedral.org.uk",
+          2
+        ],
+        [
+          "exeter.gov.uk",
+          2
+        ],
+        [
+          "gov.uk",
+          2
+        ],
+        [
+          "rammuseum.org.uk",
+          2
+        ],
+        [
+          "visitexeter.com",
+          2
+        ],
+        [
+          "ageuk.org.uk",
+          1
+        ],
+        [
+          "brickfestivalevents.com",
+          1
+        ],
+        [
+          "cosyclub.co.uk",
+          1
+        ],
+        [
+          "exetercct.org",
+          1
+        ],
+        [
+          "exetercornexchange.co.uk",
+          1
+        ],
+        [
+          "exeterharriers.org.uk",
+          1
+        ],
+        [
+          "fixr.co",
+          1
+        ]
+      ]
+    }
+  ],
+  "overallRank": 4,
+  "distinctDomains": 1250
+}

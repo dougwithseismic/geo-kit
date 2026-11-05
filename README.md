@@ -110,6 +110,8 @@ Work these in order (skipping #1 makes the rest worthless). Grounded in
    earned mentions (see [templates](#go-to-market-templates)).
 4. **Measure the right thing** — most citations are zero-click, so
    [triangulate](#measurement).
+5. **Check each engine's view** — run the [fan-out](#query-fan-out) and score
+   whether agents see, open and cite the site. Do it first as a baseline too.
 
 ## Usage
 
@@ -409,6 +411,35 @@ For custom reporting, import the pure helpers: `sumTotals`, `pctChange`,
 [citation spot-checks](./templates/ai-citation-checks.md) — the ground truth —
 and check the GSC generative-AI report + Bing Webmaster Tools AI Performance.
 
+## Query fan-out
+
+Agents don't search the user's words: they fan out into their own queries, open
+a few pages and cite fewer. `src/fanout/cli.ts` runs a term list through Codex
+(and Claude, where headless `claude -p` works), records every query, page and
+result domain, and scores one site's funnel. Runs on Node ≥ 22.18:
+
+```bash
+node src/fanout/cli.ts run --terms terms.txt --engines codex --out fanout-data/<date> --concurrency 4
+```
+
+```bash
+node src/fanout/cli.ts report --in fanout-data/<date>
+```
+
+```bash
+node src/fanout/cli.ts coverage --in fanout-data/<date> --site example.com --brand "Example Ltd" --gsc Queries.csv
+```
+
+- `report` — queries per run, year use, query types, templates, most-opened domains.
+- `coverage` — seen / first result / opened / cited per engine, a per-term table
+  against Google positions, and the domains opened instead (a placement target list).
+- `ingest` — adds a Claude subagent transcript as a run.
+
+The parsers and `siteCoverage` are exported for custom reporting. Method and
+fixes: [`playbook/engine-coverage.md`](./playbook/engine-coverage.md). Evidence:
+the [November 2026 study](./research/2026-11-fanout/ARTICLE.md) and a
+[single-site case study](./research/2026-11-fanout/dwf/README.md).
+
 ## Agent skills
 
 Copy the skills into your project so Claude Code / agents can drive the work:
@@ -421,8 +452,10 @@ cp -r node_modules/@withseismic/geo-kit/skills/* .claude/skills/
   structure, and off-site/entity signals; emits a prioritized gap report.
 - **`geo-content`** — writes/retrofits pages with answer-first structure,
   question headings, sourced stats, and FAQ schema.
-- **`geo-measure`** — pulls the five measurement signals and reports deltas vs a
+- **`geo-measure`** — pulls the six measurement signals and reports deltas vs a
   baseline.
+- **`geo-fanout`** — runs a site's terms through the agents, scores the seen →
+  opened → cited funnel, checks the engine's index, and writes the plan.
 
 Each is self-contained (embeds the rules) so it works standalone.
 

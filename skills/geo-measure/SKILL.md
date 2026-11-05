@@ -6,9 +6,9 @@ description: Measure AI-search visibility and citations — pull Google Search C
 # GEO Measure
 
 Report AI-search visibility. Most AI exposure is **zero-click**, so no single
-metric is enough — triangulate the five signals below and compare to a baseline.
+metric is enough — triangulate the six signals below and compare to a baseline.
 
-## The five signals
+## The six signals
 
 1. **Google generative-AI report (impressions).**
    `https://search.google.com/search-console/performance/search-analytics/ai?resource_id=<PROPERTY>`
@@ -41,10 +41,21 @@ metric is enough — triangulate the five signals below and compare to a baselin
    `templates/ai-citation-checks.md` runbook. Run in the target locale (location
    matters — engines localise).
 
+6. **Fan-out coverage (monthly).** Re-run the site's fixed term list through
+   the agents and score the funnel per engine:
+   ```bash
+   node src/fanout/cli.ts report --in fanout-data/<date>-<site>
+   node src/fanout/cli.ts coverage --in fanout-data/<date>-<site> --site <domain> --brand "<Brand>" --gsc Queries.csv
+   ```
+   Track **seen / opened / cited** out of N runs per engine, and the "opened
+   instead" domains. Use the same term list every month, or the numbers don't
+   compare. The `geo-fanout` skill covers the first run.
+
 ## Report format
 
 - **Headline:** direction of travel vs baseline (impressions, target-intent
-  positions, AI-referral count, bot-fetch count, citation spot-check score).
+  positions, AI-referral count, bot-fetch count, citation spot-check score,
+  fan-out funnel per engine).
 - **What moved and why** (tie changes to shipped work).
 - **Realistic framing:** LLM referrals are ~0.1% of organic sessions even for top
   publishers today — report the *trend* and the *citation presence*, not just raw

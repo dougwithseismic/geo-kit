@@ -11,6 +11,7 @@ The write-up is [ARTICLE.md](ARTICLE.md).
 | `report.md`, `report.json` | Output of `cli.ts report` |
 | `capped/` | The same outputs for 10 Claude runs with a 150-word answer limit, kept as a comparison |
 | `informational/` | The terms, runs, queries and reports for the 30 informational terms |
+| `dwf/` | A single-site case study: 30 Dinners With Friends terms scored with `cli.ts coverage`, plus an index check and the plan that followed |
 | `scripts/` | `export-runs.ts` builds `runs.jsonl`; `by-vertical.mjs` builds the vertical table; `compare-informational.mjs` compares the two batches |
 
 Raw transcripts (including fetched page text) stay in the gitignored

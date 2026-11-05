@@ -1,0 +1,1319 @@
+{
+  "generatedAt": "2026-11-05T11:55:44.953Z",
+  "summaries": [
+    {
+      "engine": "claude",
+      "runs": 30,
+      "failedRuns": 0,
+      "runsWithSearch": 30,
+      "queries": 138,
+      "searchCalls": 138,
+      "avgQueriesPerRun": 4.6,
+      "avgFetchesPerRun": 3.7,
+      "labelShare": {
+        "other": 0.623,
+        "head": 0.167,
+        "proof:reviews": 0.094,
+        "or-list": 0.072,
+        "pricing": 0.029,
+        "proof:awards": 0.022,
+        "spec/feature": 0.022
+      },
+      "labelRunShare": {
+        "other": 0.933,
+        "head": 0.5,
+        "proof:reviews": 0.333,
+        "or-list": 0.267,
+        "pricing": 0.1,
+        "spec/feature": 0.1,
+        "proof:awards": 0.067
+      },
+      "yearShare": 0.413,
+      "recencyWordShare": 0.101,
+      "runsWithYearShare": 0.933,
+      "restatementShare": 0.159,
+      "topTemplates": [
+        [
+          "{term}",
+          10
+        ],
+        [
+          "{term} {year}",
+          7
+        ],
+        [
+          "{name} {term} {name}",
+          3
+        ],
+        [
+          "{name} {term} {name} {term}",
+          2
+        ],
+        [
+          "{name-list} {year}",
+          1
+        ],
+        [
+          "{name-list} event market fair",
+          1
+        ],
+        [
+          "{name-list} weekly",
+          1
+        ],
+        [
+          "{name} {term}",
+          1
+        ],
+        [
+          "{name} {term} {name} {term} {year} 2027",
+          1
+        ],
+        [
+          "{name} {term} {name} {term} OR {name} {term} {name-list} {term} retired {term} club",
+          1
+        ],
+        [
+          "{name} {term} {name} {term} prices",
+          1
+        ],
+        [
+          "{name} {term} {name} {term} review",
+          1
+        ],
+        [
+          "{name} {term} {name} pub of the year {year} winner",
+          1
+        ],
+        [
+          "{name} {term} {name} reviews",
+          1
+        ],
+        [
+          "{name} {term} {year} {name-list}",
+          1
+        ],
+        [
+          "{name} {term} {year} review",
+          1
+        ],
+        [
+          "{name} {term} 6 7 {name} {year}",
+          1
+        ],
+        [
+          "{name} {term} club night training {name}",
+          1
+        ],
+        [
+          "{name} {term} community connectors older people groups OR {name-list}",
+          1
+        ],
+        [
+          "{name} {term} events {name}",
+          1
+        ],
+        [
+          "{name} {term} exhibition autumn {year}",
+          1
+        ],
+        [
+          "{name} {term} gin {term} bar {name}",
+          1
+        ],
+        [
+          "{name} {term} opening hours free entry {year}",
+          1
+        ],
+        [
+          "{name} {term} price",
+          1
+        ],
+        [
+          "{name} {term} price menu",
+          1
+        ]
+      ],
+      "topFetchedDomains": [
+        [
+          "visitexeter.com",
+          10
+        ],
+        [
+          "exeter-cathedral.org.uk",
+          5
+        ],
+        [
+          "thetab.com",
+          4
+        ],
+        [
+          "designmynight.com",
+          2
+        ],
+        [
+          "exeterviews.co.uk",
+          2
+        ],
+        [
+          "greatbritishlife.co.uk",
+          2
+        ],
+        [
+          "hearthomemag.co.uk",
+          2
+        ],
+        [
+          "meetup.com",
+          2
+        ],
+        [
+          "opentable.co.uk",
+          2
+        ],
+        [
+          "stagecoachbus.com",
+          2
+        ],
+        [
+          "theexeterdaily.co.uk",
+          2
+        ],
+        [
+          "afternoontea.co.uk",
+          1
+        ],
+        [
+          "ageuk.org.uk",
+          1
+        ],
+        [
+          "birdeye.com",
+          1
+        ],
+        [
+          "birlandfeasts.co.uk",
+          1
+        ],
+        [
+          "boardexeter.co.uk",
+          1
+        ],
+        [
+          "cal1.lr.ggtyler.dev",
+          1
+        ],
+        [
+          "cdn.fodors.com",
+          1
+        ],
+        [
+          "checkatrade.com",
+          1
+        ],
+        [
+          "classbento.co.uk",
+          1
+        ],
+        [
+          "club.race-nation.co.uk",
+          1
+        ],
+        [
+          "cosyclub.co.uk",
+          1
+        ],
+        [
+          "culturecalling.com",
+          1
+        ],
+        [
+          "devon.gov.uk",
+          1
+        ],
+        [
+          "en.wikipedia.org",
+          1
+        ]
+      ],
+      "topResultDomains": [
+        [
+          "visitexeter.com",
+          19
+        ],
+        [
+          "northdevongazette.co.uk",
+          14
+        ],
+        [
+          "wanderlog.com",
+          10
+        ],
+        [
+          "news.exeter.gov.uk",
+          9
+        ],
+        [
+          "theexeterdaily.co.uk",
+          9
+        ],
+        [
+          "eventbrite.co.uk",
+          8
+        ],
+        [
+          "eventslist.co.uk",
+          8
+        ],
+        [
+          "exeter-cathedral.org.uk",
+          8
+        ],
+        [
+          "mail.eventslist.co.uk",
+          8
+        ],
+        [
+          "opentable.ca",
+          8
+        ],
+        [
+          "opentable.co.uk",
+          8
+        ],
+        [
+          "opentable.com",
+          8
+        ],
+        [
+          "stagecoachbus.com",
+          8
+        ],
+        [
+          "visitsouthdevon.co.uk",
+          8
+        ],
+        [
+          "classic.co.uk",
+          7
+        ],
+        [
+          "exeterviews.co.uk",
+          7
+        ],
+        [
+          "opentable.com.au",
+          7
+        ],
+        [
+          "designmynight.com",
+          6
+        ],
+        [
+          "legacy.exeterguild.com",
+          6
+        ],
+        [
+          "opentable.ie",
+          6
+        ],
+        [
+          "radioexe.co.uk",
+          6
+        ],
+        [
+          "tripaligner.com",
+          6
+        ],
+        [
+          "app.wanderlog.com",
+          5
+        ],
+        [
+          "cal1.lr.ggtyler.dev",
+          5
+        ],
+        [
+          "devonairradio.com",
+          5
+        ]
+      ],
+      "topEntities": [
+        [
+          "Exeter Devon",
+          6
+        ],
+        [
+          "Saturday",
+          3
+        ],
+        [
+          "Devon",
+          2
+        ],
+        [
+          "Exeter CVS",
+          2
+        ],
+        [
+          "Exeter Ramblers",
+          2
+        ],
+        [
+          "Exeter Riverside",
+          2
+        ],
+        [
+          "November December",
+          2
+        ],
+        [
+          "RAMM Exeter",
+          2
+        ],
+        [
+          "6 November 2026",
+          1
+        ],
+        [
+          "7 November 2026",
+          1
+        ],
+        [
+          "8 November 2026",
+          1
+        ],
+        [
+          "Age UK",
+          1
+        ],
+        [
+          "Barnstaple",
+          1
+        ],
+        [
+          "Botanist",
+          1
+        ],
+        [
+          "Botanist Exeter New Year's Eve",
+          1
+        ],
+        [
+          "Bumble BFF",
+          1
+        ],
+        [
+          "CAMRA Exeter East Devon",
+          1
+        ],
+        [
+          "Cathedral Green",
+          1
+        ],
+        [
+          "Chips South Street Exeter",
+          1
+        ],
+        [
+          "Christmas",
+          1
+        ],
+        [
+          "Clyst",
+          1
+        ],
+        [
+          "Cosy Club",
+          1
+        ],
+        [
+          "Crocketts Exeter",
+          1
+        ],
+        [
+          "Dartmoor",
+          1
+        ],
+        [
+          "Dartmouth",
+          1
+        ]
+      ],
+      "topModifiers": [
+        [
+          "review",
+          5
+        ],
+        [
+          "date",
+          2
+        ],
+        [
+          "event",
+          2
+        ],
+        [
+          "market cathedral date",
+          2
+        ],
+        [
+          "price",
+          2
+        ],
+        [
+          "2026",
+          1
+        ],
+        [
+          "2027",
+          1
+        ],
+        [
+          "31 party ticket",
+          1
+        ],
+        [
+          "6 7",
+          1
+        ],
+        [
+          "8 service parade",
+          1
+        ],
+        [
+          "approved",
+          1
+        ],
+        [
+          "apps group meet new",
+          1
+        ],
+        [
+          "area",
+          1
+        ],
+        [
+          "area avoid cheaper area commuter",
+          1
+        ],
+        [
+          "award",
+          1
+        ],
+        [
+          "bar guide speakeasy",
+          1
+        ],
+        [
+          "bar opened 2026 new",
+          1
+        ],
+        [
+          "bonfire firework",
+          1
+        ],
+        [
+          "brunch cafe guide",
+          1
+        ],
+        [
+          "cafe paint mug city centre studio",
+          1
+        ],
+        [
+          "chip shop award",
+          1
+        ],
+        [
+          "city centre celebration firework council does have firework",
+          1
+        ],
+        [
+          "classe community event board game pub quiz meet people",
+          1
+        ],
+        [
+          "club adult making friend",
+          1
+        ],
+        [
+          "club chef table",
+          1
+        ]
+      ],
+      "topSiteScoped": [],
+      "topFirstCallEntities": [
+        [
+          "Cathedral Green",
+          1
+        ],
+        [
+          "Exeter Devon",
+          1
+        ],
+        [
+          "New Year's Eve",
+          1
+        ],
+        [
+          "November",
+          1
+        ],
+        [
+          "Topsham Devon",
+          1
+        ]
+      ],
+      "costUsd": 0
+    },
+    {
+      "engine": "codex",
+      "runs": 30,
+      "failedRuns": 0,
+      "runsWithSearch": 30,
+      "queries": 180,
+      "searchCalls": 77,
+      "avgQueriesPerRun": 6,
+      "avgFetchesPerRun": 0.8,
+      "labelShare": {
+        "other": 0.494,
+        "site-scoped": 0.35,
+        "pricing": 0.094,
+        "head": 0.072,
+        "proof:reviews": 0.056,
+        "location-check": 0.011,
+        "proof:awards": 0.006
+      },
+      "labelRunShare": {
+        "other": 0.933,
+        "site-scoped": 0.567,
+        "head": 0.367,
+        "pricing": 0.3,
+        "proof:reviews": 0.2,
+        "location-check": 0.067,
+        "proof:awards": 0.033
+      },
+      "yearShare": 0.317,
+      "recencyWordShare": 0.05,
+      "runsWithYearShare": 0.633,
+      "restatementShare": 0.028,
+      "topTemplates": [
+        [
+          "{site} {name}",
+          12
+        ],
+        [
+          "{name}",
+          5
+        ],
+        [
+          "{term} {name}",
+          3
+        ],
+        [
+          "{term} {year}",
+          3
+        ],
+        [
+          "{site} {term} {name}",
+          2
+        ],
+        [
+          "{name} {term} {name} {term} 730 official",
+          1
+        ],
+        [
+          "{name} {term} {name} {term} official",
+          1
+        ],
+        [
+          "{name} {term} {name} {term} official 730",
+          1
+        ],
+        [
+          "{name} {term} {name} {year} 2027",
+          1
+        ],
+        [
+          "{name} {term} {name} {year} reviews",
+          1
+        ],
+        [
+          "{name} {term} {name} rating {year} reviews",
+          1
+        ],
+        [
+          "{name} {term} £2150",
+          1
+        ],
+        [
+          "{name} {term} bar menu website",
+          1
+        ],
+        [
+          "{name} {term} bar official",
+          1
+        ],
+        [
+          "{name} {term} closed {term} bar",
+          1
+        ],
+        [
+          "{name} {term} club {name} {year} price",
+          1
+        ],
+        [
+          "{name} {term} group sessions {name} {year}",
+          1
+        ],
+        [
+          "{name} {term} menu",
+          1
+        ],
+        [
+          "{name} {term} menu price {year}",
+          1
+        ],
+        [
+          "{name} {term} official",
+          1
+        ],
+        [
+          "{name} {term} official {term} bar",
+          1
+        ],
+        [
+          "{name} {term} official 01392 715353",
+          1
+        ],
+        [
+          "{name} {term} official brunch menu opening hours",
+          1
+        ],
+        [
+          "{name} {term} official food menu",
+          1
+        ],
+        [
+          "{name} {term} official membership {term} 50",
+          1
+        ]
+      ],
+      "topFetchedDomains": [
+        [
+          "exeter-cathedral.org.uk",
+          2
+        ],
+        [
+          "arcadiaexeter.com",
+          1
+        ],
+        [
+          "asaplocksmithsexeter.co.uk",
+          1
+        ],
+        [
+          "board.uk",
+          1
+        ],
+        [
+          "dictionary.cambridge.org",
+          1
+        ],
+        [
+          "exeter.u3asite.uk",
+          1
+        ],
+        [
+          "exetercct.org",
+          1
+        ],
+        [
+          "exetercornexchange.co.uk",
+          1
+        ],
+        [
+          "exeteru3a.org.uk",
+          1
+        ],
+        [
+          "exeterwinterwonderland.co.uk",
+          1
+        ],
+        [
+          "fixr.co",
+          1
+        ],
+        [
+          "heron-farm.co.uk",
+          1
+        ],
+        [
+          "ilgrano.co.uk",
+          1
+        ],
+        [
+          "kin-khao.co.uk",
+          1
+        ],
+        [
+          "krispies.co.uk",
+          1
+        ],
+        [
+          "meetup.com",
+          1
+        ],
+        [
+          "millontheexe.co.uk",
+          1
+        ],
+        [
+          "opentable.com",
+          1
+        ],
+        [
+          "parkrun.org.uk",
+          1
+        ],
+        [
+          "salutationtopsham.co.uk",
+          1
+        ],
+        [
+          "speedquizzing.com",
+          1
+        ],
+        [
+          "stagerestaurant.co.uk",
+          1
+        ],
+        [
+          "taylorsrestaurant.co.uk",
+          1
+        ],
+        [
+          "thejollypottery.co.uk",
+          1
+        ]
+      ],
+      "topResultDomains": [
+        [
+          "reddit.com",
+          30
+        ],
+        [
+          "en.wikipedia.org",
+          27
+        ],
+        [
+          "dinnerswithfriends.co.uk",
+          21
+        ],
+        [
+          "visitexeter.com",
+          19
+        ],
+        [
+          "inexeter.co.uk",
+          15
+        ],
+        [
+          "exeterphoenix.org.uk",
+          9
+        ],
+        [
+          "committees.exeter.gov.uk",
+          8
+        ],
+        [
+          "countrylife.co.uk",
+          8
+        ],
+        [
+          "exeter.ac.uk",
+          8
+        ],
+        [
+          "meetup.com",
+          7
+        ],
+        [
+          "roq.app",
+          7
+        ],
+        [
+          "theweek.com",
+          7
+        ],
+        [
+          "visitsouthdevon.co.uk",
+          7
+        ],
+        [
+          "weur-cdn.menuweb.menu",
+          7
+        ],
+        [
+          "exeter-cathedral.org.uk",
+          6
+        ],
+        [
+          "sluurpy.co.uk",
+          6
+        ],
+        [
+          "tripadvisor.co.uk",
+          6
+        ],
+        [
+          "eci.org.uk",
+          5
+        ],
+        [
+          "event.exeter.ac.uk",
+          5
+        ],
+        [
+          "exetergcc.co.uk",
+          5
+        ],
+        [
+          "exeterquay.org",
+          5
+        ],
+        [
+          "exetertimes.co.uk",
+          5
+        ],
+        [
+          "static1.squarespace.com",
+          5
+        ],
+        [
+          "tripadvisor.com",
+          5
+        ],
+        [
+          "wallpaper.com",
+          5
+        ]
+      ],
+      "topEntities": [
+        [
+          "2026",
+          7
+        ],
+        [
+          "November",
+          4
+        ],
+        [
+          "December",
+          3
+        ],
+        [
+          "free",
+          3
+        ],
+        [
+          "Devon Bootlegs",
+          2
+        ],
+        [
+          "ESCA",
+          2
+        ],
+        [
+          "Exeter Board Gamers",
+          2
+        ],
+        [
+          "Exeter Cathedral Christmas Market",
+          2
+        ],
+        [
+          "Exeter Socials Meetup",
+          2
+        ],
+        [
+          "membership",
+          2
+        ],
+        [
+          "Salutation Inn Topsham",
+          2
+        ],
+        [
+          "Saturday Sunday",
+          2
+        ],
+        [
+          "Sunday",
+          2
+        ],
+        [
+          "10",
+          1
+        ],
+        [
+          "19",
+          1
+        ],
+        [
+          "20",
+          1
+        ],
+        [
+          "2027",
+          1
+        ],
+        [
+          "31 December 2026",
+          1
+        ],
+        [
+          "40",
+          1
+        ],
+        [
+          "50",
+          1
+        ],
+        [
+          "8 November 2026",
+          1
+        ],
+        [
+          "About us",
+          1
+        ],
+        [
+          "Age UK Exeter",
+          1
+        ],
+        [
+          "Al Farid Sabatini Calvo",
+          1
+        ],
+        [
+          "Arcadia Utopian Exeter Sunday",
+          1
+        ]
+      ],
+      "topModifiers": [
+        [
+          "menu",
+          3
+        ],
+        [
+          "review",
+          2
+        ],
+        [
+          "£2150",
+          1
+        ],
+        [
+          "01392 715353",
+          1
+        ],
+        [
+          "2027",
+          1
+        ],
+        [
+          "31 event",
+          1
+        ],
+        [
+          "5",
+          1
+        ],
+        [
+          "50 club friendship group",
+          1
+        ],
+        [
+          "7 8 2026 event theatre music",
+          1
+        ],
+        [
+          "7 80s comedy",
+          1
+        ],
+        [
+          "730",
+          1
+        ],
+        [
+          "8 ticket",
+          1
+        ],
+        [
+          "activity group",
+          1
+        ],
+        [
+          "area",
+          1
+        ],
+        [
+          "authentic review",
+          1
+        ],
+        [
+          "bar",
+          1
+        ],
+        [
+          "bar menu website",
+          1
+        ],
+        [
+          "beginner social club",
+          1
+        ],
+        [
+          "brunch menu opening hour",
+          1
+        ],
+        [
+          "cafe brunch",
+          1
+        ],
+        [
+          "canal walk",
+          1
+        ],
+        [
+          "ceramic cafe",
+          1
+        ],
+        [
+          "check long term flood risk address",
+          1
+        ],
+        [
+          "closed bar",
+          1
+        ],
+        [
+          "club",
+          1
+        ]
+      ],
+      "topSiteScoped": [
+        [
+          "exeterivc.org",
+          3
+        ],
+        [
+          "exeterphoenix.org.uk",
+          3
+        ],
+        [
+          "meetup.com",
+          3
+        ],
+        [
+          "exeter-cathedral.org.uk",
+          2
+        ],
+        [
+          "exeter.gov.uk",
+          2
+        ],
+        [
+          "gov.uk",
+          2
+        ],
+        [
+          "rammuseum.org.uk",
+          2
+        ],
+        [
+          "visitexeter.com",
+          2
+        ],
+        [
+          "ageuk.org.uk",
+          1
+        ],
+        [
+          "brickfestivalevents.com",
+          1
+        ],
+        [
+          "cosyclub.co.uk",
+          1
+        ],
+        [
+          "exetercct.org",
+          1
+        ],
+        [
+          "exetercornexchange.co.uk",
+          1
+        ],
+        [
+          "exeterharriers.org.uk",
+          1
+        ],
+        [
+          "fixr.co",
+          1
+        ],
+        [
+          "forestryengland.uk",
+          1
+        ],
+        [
+          "guide.michelin.com",
+          1
+        ],
+        [
+          "heron-farm.co.uk",
+          1
+        ],
+        [
+          "hourglassexeter.co.uk",
+          1
+        ],
+        [
+          "inexeter.com",
+          1
+        ],
+        [
+          "locksmiths.co.uk",
+          1
+        ],
+        [
+          "millontheexe.com",
+          1
+        ],
+        [
+          "mind.org.uk",
+          1
+        ],
+        [
+          "moveexeter.com",
+          1
+        ],
+        [
+          "nhs.uk",
+          1
+        ]
+      ],
+      "topFirstCallEntities": [
+        [
+          "Exeter Cathedral Christmas Market",
+          2
+        ],
+        [
+          "Age UK Exeter",
+          1
+        ],
+        [
+          "Al Farid Sabatini Calvo",
+          1
+        ],
+        [
+          "December",
+          1
+        ],
+        [
+          "Double Locks Turf Hotel Old Firehouse",
+          1
+        ],
+        [
+          "Exe",
+          1
+        ],
+        [
+          "Exeter CAMRA The Hour Glass Fat Pig Bridge Inn",
+          1
+        ],
+        [
+          "Exeter Cathedral Underground Passages RAMM Quayside",
+          1
+        ],
+        [
+          "Exeter New Year's Eve",
+          1
+        ],
+        [
+          "Exeter November",
+          1
+        ],
+        [
+          "Exeter St Leonards Heavitree Pennsylvania Topsham",
+          1
+        ],
+        [
+          "Hook Fish Chips Topsham Fish Shed Krispies",
+          1
+        ],
+        [
+          "Meetup",
+          1
+        ],
+        [
+          "Michelin",
+          1
+        ],
+        [
+          "MLA",
+          1
+        ],
+        [
+          "November",
+          1
+        ],
+        [
+          "November December",
+          1
+        ],
+        [
+          "Pallet The River Exe Cafe",
+          1
+        ],
+        [
+          "Rockfish Cosy Club Mill",
+          1
+        ],
+        [
+          "Royal Clarence Hotel",
+          1
+        ],
+        [
+          "South West Road Runners Exeter Harriers",
+          1
+        ],
+        [
+          "St Thomas Heavitree Newtown",
+          1
+        ],
+        [
+          "The Daisy Cafe Harry's The Exploding Bakery",
+          1
+        ],
+        [
+          "The Last Drop The Bootlegger Crocketts",
+          1
+        ],
+        [
+          "The Pig",
+          1
+        ]
+      ],
+      "costUsd": 0
+    }
+  ],
+  "agreement": {
+    "terms": 30,
+    "meanFetchedDomainJaccard": 0.058,
+    "meanEntityJaccard": 0.026
+  }
+}
