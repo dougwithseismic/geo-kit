@@ -7,6 +7,8 @@
  *     --engines codex,claude --out fanout-data/2026-11-05 --concurrency 3
  *   node src/fanout/cli.ts report --in fanout-data/2026-11-05
  *   node src/fanout/cli.ts ingest --engine claude --term "…" --file transcript.jsonl --out …
+ *   node src/fanout/cli.ts coverage --in fanout-data/2026-11-05 --site example.com \
+ *     [--brand "Example Ltd"] [--gsc Queries.csv]
  *
  * Engines (each must be installed and signed in):
  *   codex  — `codex --search exec --json`, read-only sandbox, ephemeral.
@@ -32,6 +34,7 @@ import {
   queriesOf,
   queryModifier,
   queryTemplate,
+  siteCoverage,
   summarise,
 } from "./fanout.ts";
 
@@ -205,6 +208,52 @@ function cmdReport(o: Record<string, string>) {
   console.log(md.join("\n"));
 }
 
+/** Search Console "Queries.csv" export → content-word key → best row, so a term can be matched to its Google position. */
+function readGsc(file: string) {
+  const stop = new Set(["best", "in", "the", "a", "to", "for", "of", "what", "is", "how", "when", "does", "near", "me"]);
+  const key = (s: string) => s.toLowerCase().replace(/[^a-z0-9 ]/g, " ").split(/\s+/).filter((w) => w && !stop.has(w)).sort().join(" ");
+  const rows = new Map<string, { query: string; impressions: number; position: number }>();
+  for (const line of readFileSync(file, "utf8").split("\n").slice(1)) {
+    const cells = line.split(",");
+    if (cells.length < 5 || !cells[0]) continue;
+    const [query, , impressions, , position] = cells;
+    const k = key(query);
+    const cur = rows.get(k);
+    if (!cur || Number(impressions) > cur.impressions) rows.set(k, { query, impressions: Number(impressions), position: Number(position) });
+  }
+  return (term: string) => rows.get(key(term));
+}
+
+function cmdCoverage(o: Record<string, string>) {
+  if (!o.in || !o.site) throw new Error("coverage needs --in <dir> and --site <domain>");
+  const cov = siteCoverage(loadTraces(o.in), o.site, { brand: o.brand, topN: Number(o.top ?? 15) });
+  const gsc = o.gsc ? readGsc(o.gsc) : undefined;
+  const list = (xs: [string, number][]) => xs.map(([d, n]) => `${n} ${d}`).join(" · ") || "–";
+  const md: string[] = [`# Coverage of ${cov.site} — ${o.in}`, ""];
+  md.push("| Engine | Runs | In results | First result | Opened | Named in answer | Searched for by name |", "|---|---|---|---|---|---|---|");
+  for (const e of cov.engines) md.push(`| ${e.engine} | ${e.runs} | ${e.seen} | ${e.seenFirst} | ${e.opened} | ${e.cited} | ${e.queried} |`);
+  md.push("", `${cov.site} ranks ${cov.overallRank || "absent"} of ${cov.distinctDomains} domains seen or opened across all runs.`);
+  const engines = cov.engines.map((e) => e.engine);
+  md.push("", "## Per term", "", "s = in results (position), o = opened, a = named in answer", "");
+  md.push(`| Term |${gsc ? " Google position |" : ""} ${engines.join(" | ")} |`, `|---|${gsc ? "---|" : ""}${engines.map(() => "---|").join("")}`);
+  for (const term of [...new Set(cov.runs.map((r) => r.term))]) {
+    const cell = (e: Engine) => {
+      const r = cov.runs.find((x) => x.term === term && x.engine === e);
+      if (!r) return "";
+      return [r.seen ? `s${r.seenAt}` : "", r.opened ? "o" : "", r.cited ? "a" : ""].filter(Boolean).join(" ") || "–";
+    };
+    const g = gsc?.(term);
+    md.push(`| ${term} |${gsc ? ` ${g ? g.position.toFixed(1) : ""} |` : ""} ${engines.map(cell).join(" | ")} |`);
+  }
+  for (const e of cov.engines) {
+    md.push("", `## ${e.engine}`, "", `**Opened instead (runs):** ${list(e.topOpened)}`, "", `**In results (runs):** ${list(e.topSeen)}`);
+    if (e.topScoped.length) md.push("", `**Domain-scoped searches (runs):** ${list(e.topScoped)}`);
+  }
+  writeFileSync(join(o.in, "coverage.json"), JSON.stringify(cov, null, 2));
+  writeFileSync(join(o.in, "coverage.md"), md.join("\n") + "\n");
+  console.log(md.join("\n"));
+}
+
 function cmdIngest(o: Record<string, string>) {
   if (!o.engine || !o.term || !o.file || !o.out) throw new Error("ingest needs --engine --term --file --out");
   const engine = o.engine as Engine;
@@ -219,9 +268,9 @@ function cmdIngest(o: Record<string, string>) {
 }
 
 const { cmd, o } = args(process.argv.slice(2));
-const commands: Record<string, (o: Record<string, string>) => unknown> = { run: cmdRun, report: cmdReport, ingest: cmdIngest };
+const commands: Record<string, (o: Record<string, string>) => unknown> = { run: cmdRun, report: cmdReport, ingest: cmdIngest, coverage: cmdCoverage };
 if (!commands[cmd]) {
-  console.error("usage: node src/fanout/cli.ts <run|report|ingest> [options]  (see file header)");
+  console.error("usage: node src/fanout/cli.ts <run|report|ingest|coverage> [options]  (see file header)");
   process.exit(1);
 }
 Promise.resolve(commands[cmd](o)).catch((err) => {

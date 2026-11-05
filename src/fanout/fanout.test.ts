@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import {
+  brandPattern,
   classifyQuery,
   engineAgreement,
   namedEntities,
@@ -8,6 +9,7 @@ import {
   queriesOf,
   queryModifier,
   queryTemplate,
+  siteCoverage,
   siteScopedDomains,
   summarise,
   termOverlap,
@@ -120,5 +122,39 @@ describe("summarise / engineAgreement", () => {
     const m = new Map<string, Partial<Record<Engine, RunTrace>>>([[term, { claude: c, codex: x }]]);
     expect(engineAgreement(m).terms).toBe(1);
     expect(engineAgreement(m).meanFetchedDomainJaccard).toBe(0);
+  });
+});
+
+describe("siteCoverage", () => {
+  const run = (engine: Engine, t: string, p: Partial<RunTrace>): RunTrace => ({
+    engine, term: t, searchCalls: [{ id: "s", queries: ["q"] }], fetches: [], pageSearches: [], resultDomains: [], finalText: "", ...p,
+  });
+  const traces = [
+    run("codex", "pub quiz exeter", { resultDomains: ["visitexeter.com", "blog.example.co.uk", "reddit.com"], fetches: ["https://visitexeter.com/x"] }),
+    run("codex", "what is a supper club", { resultDomains: ["example.co.uk"], finalText: "Example Club runs them in Exeter." }),
+    run("claude", "pub quiz exeter", { resultDomains: ["visitexeter.com"], fetches: ["https://www.example.co.uk/blog/a"], searchCalls: [{ id: "s", queries: ["site:example.co.uk quiz"] }] }),
+    run("claude", "failed", { error: "timeout", resultDomains: ["example.co.uk"] }),
+  ];
+  const cov = siteCoverage(traces, "www.example.co.uk", { brand: "Example Club" });
+
+  it("counts the found → opened → cited funnel per engine, skipping failed runs", () => {
+    const codex = cov.engines.find((e) => e.engine === "codex")!;
+    const claude = cov.engines.find((e) => e.engine === "claude")!;
+    expect([codex.runs, codex.seen, codex.seenFirst, codex.opened, codex.cited]).toEqual([2, 2, 1, 0, 1]);
+    expect([claude.runs, claude.seen, claude.opened, claude.queried]).toEqual([1, 0, 1, 1]);
+  });
+
+  it("records the result position, counts subdomains as the site, and lists who was opened instead", () => {
+    expect(cov.runs.find((r) => r.engine === "codex" && r.term === "pub quiz exeter")?.seenAt).toBe(2);
+    expect(cov.engines.find((e) => e.engine === "codex")!.topOpened).toEqual([["visitexeter.com", 1]]);
+    expect(cov.engines.find((e) => e.engine === "claude")!.topScoped).toEqual([["example.co.uk", 1]]);
+    expect(cov.overallRank).toBe(1);
+  });
+
+  it("matches the brand with or without spaces", () => {
+    const re = brandPattern("dinnerswithfriends.co.uk", "Dinners With Friends");
+    expect(re.test("try Dinners with Friends")).toBe(true);
+    expect(re.test("dinnerswithfriends")).toBe(true);
+    expect(re.test("dinner friends")).toBe(false);
   });
 });

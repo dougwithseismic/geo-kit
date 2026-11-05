@@ -421,6 +421,121 @@ export function summarise(engine: Engine, traces: RunTrace[], topN = 25): Engine
   };
 }
 
+// ── Site coverage ───────────────────────────────────────────────────────────
+
+/** One run, seen from one site's point of view: found → opened → cited. */
+export interface SiteRun {
+  engine: Engine;
+  term: string;
+  queries: number;
+  /** The site's domain came back in search results. */
+  seen: boolean;
+  /** 1-based position among the run's distinct result domains, in the order they came back. */
+  seenAt?: number;
+  /** The agent opened a page on the site. */
+  opened: boolean;
+  /** The final answer names the brand or domain. */
+  cited: boolean;
+  /** The agent searched for the brand or domain itself. */
+  queried: boolean;
+  /** Domain-scoped searches (site:example.com) in this run. */
+  scoped: string[];
+}
+
+export interface SiteEngineCoverage {
+  engine: Engine;
+  runs: number;
+  seen: number;
+  opened: number;
+  cited: number;
+  queried: number;
+  /** Runs where the site was the first result domain. */
+  seenFirst: number;
+  /** Domains opened instead (runs), excluding the site. */
+  topOpened: [string, number][];
+  /** Domains seen in results (runs), excluding the site. */
+  topSeen: [string, number][];
+  /** Domains the agent scoped searches to (runs). */
+  topScoped: [string, number][];
+}
+
+export interface SiteCoverage {
+  site: string;
+  runs: SiteRun[];
+  engines: SiteEngineCoverage[];
+  /** Rank of the site among every domain seen or opened across all runs (by runs). 0 if absent. */
+  overallRank: number;
+  distinctDomains: number;
+}
+
+const escapeRe = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+/** A case-insensitive pattern for a brand name or domain that tolerates spacing ("Dinners With Friends" ~ "dinnerswithfriends"). */
+export function brandPattern(site: string, brand?: string): RegExp {
+  const label = site.replace(/^www\./, "").split(".")[0];
+  const parts = [escapeRe(site), escapeRe(label)];
+  if (brand) parts.push(brand.trim().split(/\s+/).map(escapeRe).join("\\s*"));
+  return new RegExp(parts.join("|"), "i");
+}
+
+const onSite = (domain: string, site: string) => domain === site || domain.endsWith(`.${site}`);
+
+/**
+ * Where does one site show up across a batch of runs, and who takes its place?
+ * The funnel is seen (in results) → opened (page read) → cited (named in the answer).
+ */
+export function siteCoverage(traces: RunTrace[], site: string, opts: { brand?: string; topN?: number } = {}): SiteCoverage {
+  const s = site.replace(/^www\./, "").toLowerCase();
+  const re = brandPattern(s, opts.brand);
+  const topN = opts.topN ?? 15;
+  const runs: SiteRun[] = [];
+  const all = new Map<string, number>();
+  const per = new Map<Engine, { opened: Map<string, number>; seen: Map<string, number>; scoped: Map<string, number> }>();
+
+  for (const t of traces.filter((t) => !t.error)) {
+    const qs = queriesOf(t);
+    const results = [...new Set(t.resultDomains)];
+    const opened = [...new Set(t.fetches.map(domainOf).filter(Boolean))];
+    const scoped = [...new Set(qs.flatMap(siteScopedDomains))];
+    const idx = results.findIndex((d) => onSite(d, s));
+    runs.push({
+      engine: t.engine,
+      term: t.term,
+      queries: qs.length,
+      seen: idx >= 0,
+      seenAt: idx >= 0 ? idx + 1 : undefined,
+      opened: opened.some((d) => onSite(d, s)),
+      cited: re.test(t.finalText),
+      queried: qs.some((q) => re.test(q)),
+      scoped,
+    });
+    const e = per.get(t.engine) ?? { opened: new Map(), seen: new Map(), scoped: new Map() };
+    per.set(t.engine, e);
+    for (const d of opened) if (!onSite(d, s)) bump(e.opened, d);
+    for (const d of results) if (!onSite(d, s)) bump(e.seen, d);
+    for (const d of scoped) bump(e.scoped, d);
+    for (const d of new Set([...results, ...opened])) bump(all, onSite(d, s) ? s : d);
+  }
+
+  const engines: SiteEngineCoverage[] = [...per.entries()].map(([engine, m]) => {
+    const r = runs.filter((x) => x.engine === engine);
+    return {
+      engine,
+      runs: r.length,
+      seen: r.filter((x) => x.seen).length,
+      opened: r.filter((x) => x.opened).length,
+      cited: r.filter((x) => x.cited).length,
+      queried: r.filter((x) => x.queried).length,
+      seenFirst: r.filter((x) => x.seenAt === 1).length,
+      topOpened: top(m.opened, topN),
+      topSeen: top(m.seen, topN),
+      topScoped: top(m.scoped, topN),
+    };
+  });
+  const ranked = top(all, Infinity);
+  return { site: s, runs, engines, overallRank: ranked.findIndex(([d]) => d === s) + 1, distinctDomains: ranked.length };
+}
+
 /** Per-term agreement between engines: Jaccard overlap of fetched domains. */
 export function engineAgreement(byTerm: Map<string, Partial<Record<Engine, RunTrace>>>): {
   terms: number;
