@@ -6,6 +6,7 @@ coverage/
 # Local, per-project data pulled by measurement tools
 measurement/data/
 scripts/data/
+fanout-data/
 .env
 .env.*
 !.env.example

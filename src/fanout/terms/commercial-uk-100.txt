@@ -1,0 +1,122 @@
+# 100 UK commercial-intent terms across 10 verticals, written the way a buyer
+# would type or ask them. No years, so any year in the agents' searches is theirs.
+
+# Agencies & B2B services
+best seo agency in london for fmcg
+b2b marketing agency for saas companies uk
+best ppc agency for ecommerce brands uk
+web design agency manchester for small business
+best pr agency for tech startups london
+recruitment agency for software engineers uk
+best accountant for limited company contractors
+outsourced bookkeeping service for small business uk
+best managed it services provider london
+branding agency for food and drink brands uk
+
+# Software / SaaS
+best crm for small business uk
+hubspot vs pipedrive for a small sales team
+best accounting software for sole traders uk
+best project management tool for agencies
+best email marketing platform for shopify stores
+xero alternatives for small business
+best hr software for uk smes
+best payroll software uk small business
+best website builder for a small business
+best password manager for a small business team
+
+# Money & finance
+best business bank account for startups uk
+best savings account rates uk
+best credit card for travel abroad uk
+best stocks and shares isa platform for beginners
+best mortgage broker for first time buyers london
+cheapest car insurance for young drivers uk
+best life insurance for parents uk
+best pension provider for self employed uk
+best invoice finance companies uk
+best card payment machine for small business uk
+
+# Consumer products
+best robot vacuum for pet hair uk
+best running shoes for flat feet
+best coffee machine for home under 500
+best mattress for back pain uk
+best air fryer for a family of four
+best noise cancelling headphones for flights
+best electric toothbrush for sensitive gums
+best baby car seat uk
+best dehumidifier for damp and mould uk
+best gaming laptop under 1500
+
+# Travel
+best all inclusive holidays for families from the uk
+cheapest way to get from london to paris
+best travel insurance for over 70s uk
+best hotels in lisbon for couples
+best airport parking at heathrow
+best city break destinations in europe for winter
+best eurostar alternatives
+best cruise lines for families from southampton
+best ski resorts in europe for beginners
+best travel money card for europe
+
+# Home services & property
+best boiler brand for a 3 bed house uk
+best solar panel installers in the uk
+best heat pump installers near bristol
+best removal companies london
+best estate agents for selling a house in manchester
+best home insurance uk for flood areas
+best broadband provider uk for working from home
+best energy supplier uk for a small home
+best letting agent for landlords in leeds
+best kitchen fitters in birmingham
+
+# Health & wellness
+best private health insurance uk for families
+best online gp service uk
+best physiotherapist in london for sports injuries
+best protein powder for women uk
+best gym membership in london for the price
+best meal delivery service uk for weight loss
+best private dentist in edinburgh for implants
+best laser eye surgery clinic uk
+best online therapy platform uk
+best vitamin d supplement uk
+
+# Education & careers
+best online mba programmes uk
+best coding bootcamp in london
+best cybersecurity courses uk for beginners
+best project management certification uk
+best online language learning app for spanish
+best sixth form colleges in surrey
+best university for computer science in the uk
+best digital marketing course uk with certificate
+best driving instructor in glasgow
+best tutoring service for gcse maths
+
+# Legal & professional
+best employment lawyer in london for unfair dismissal
+best conveyancing solicitors uk online
+best divorce lawyer in manchester
+best immigration lawyer uk for skilled worker visa
+best will writing service uk
+best trademark attorney uk for startups
+best personal injury solicitors uk no win no fee
+best company formation agent uk
+best business insurance for consultants uk
+best gdpr compliance consultant uk
+
+# Automotive, energy & telecom
+best electric car for a family uk
+best ev home charger uk
+best car leasing deals uk for electric cars
+best sim only deal uk
+best phone for an older person uk
+best used car dealers in london
+best van leasing for small business uk
+best car breakdown cover uk
+best mobile network for coverage in rural areas uk
+best business phone system for small companies uk

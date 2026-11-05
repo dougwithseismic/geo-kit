@@ -26,3 +26,6 @@ export * from "./infra/indexnow";
 export * from "./measurement/gsc";
 export * from "./measurement/ai-referral";
 export * from "./measurement/ai-bot-telemetry";
+
+// Fan-out harvesting (pure parsers + aggregation; runner is src/fanout/cli.ts)
+export * from "./fanout/fanout";
