@@ -80,7 +80,7 @@ don't fix that. Entity and link signals do.
 | Indexed, never seen | Weak entity and link authority in that index | Brand/entity work and placements on the domains it *does* open (below). |
 | Brand search returns an aggregator | The aggregator holds the entity | Make every aggregator listing link to the site with the exact brand name. Claim listings (GBP, Bing Places, Foursquare, Yelp, Tripadvisor). Publish Wikidata. |
 | Seen, not opened | The snippet loses to primary sources | See "Seen but not opened" below. |
-| Opened, not cited | The page didn't hold the deciding fact | Answer-first block, the specific facts the query asks for, dated. |
+| Opened, not cited | The page didn't hold the deciding fact | The specific facts the query asks for (price, dates, season, booking), dated, including for your own offering. See "Opened but not cited" below. |
 
 ### Seen but not opened
 
@@ -109,6 +109,37 @@ Exeter, Claude opened Visit Exeter in 10 of 30 runs, and it was in the results o
 19 Claude and 19 Codex runs. A listing or event on that site reaches the agent
 on the page it already reads. Work down the list: tourism boards, local
 newspapers, listing sites, club and venue directories.
+
+### Opened but not cited: what the agent actually reads
+
+Claude doesn't put the opened page into its context. WebFetch passes the page and
+the agent's own question ("List venues… with location, price and dates. Note the
+date.") to a smaller model and returns its answer. In the DWF batch, the 85
+fetches that succeeded returned a median of 881 characters, and only about a
+quarter of those answers named the site they came from (matched by domain
+name). So what gets used is **whichever facts survive that question**. The
+publisher's name doesn't automatically go with them.
+
+A test on DWF's supper clubs guide ([write-up](../research/2026-11-fanout/dwf/answer-block-test.md))
+restructured the page: question headings, an answer block, answer-first
+sections, and the brand in the third person. Twelve simulated extractions,
+across three questions with each version run twice, gave the same result for
+the original and the rewrite. The facts carried over equally, and DWF was named
+equally often. The page fits in the reader whole, so where a fact sits on the
+page didn't matter. What mattered was what the page didn't say. Every run
+reported DWF's own dinners as "price not stated" and "no winter schedule".
+Several flagged the self-listing as promotional. For "supper clubs near Exeter
+in winter", the other two options were closed for the season or working around
+fire damage, so a dated, priced, year-round DWF listing would have been the
+answer.
+
+- **Answer the questions the agent asks of the page:** price, dates, season,
+  location, how to book. A reader can't report a fact the page doesn't hold.
+- **List your own offering with the same facts as the others,** plus an
+  absolute booking URL. Relative links come back without a domain.
+- **Keep question headings and answer blocks** because they help people,
+  snippets and very long pages. Don't expect them to fix a citation gap on
+  their own.
 
 ## Freshness
 

@@ -31,17 +31,28 @@ present, use them.
 1. **Answer-first block, first thing after the title.** 40–70 words that directly
    answer the title's implied question — the retrievable answer with the actual
    names/prices/places. Use the `<KeyAnswer>` component (or a styled lead
-   paragraph). This is the single strongest AI-citation factor.
+   paragraph). This is the single strongest AI-citation factor. Keep the brand
+   in the page title and the byline with a reviewed date: agents' page readers
+   pick both up.
 2. **Body in question-styled sections.** Headings phrased as questions where
    natural ("Where to eat in X?", "Is Y worth it?"). Open each section by
-   answering it, then elaborate.
-3. **1–2 sourced statistics** via `<StatCallout value label source sourceUrl>` —
+   answering it, then elaborate. The first sentence must make sense with
+   nothing around it: name the subject instead of "it" or "here", and put the
+   deciding fact (price, dates, distance, open/closed) in that sentence.
+3. **If the site is one of the options, give it the same facts as the others.**
+   An agent's page reader answers the agent's question (price? dates? open in
+   winter? how to book?) and reports "not stated" for any option that doesn't
+   say. Its own events, product or service need price, schedule, season and an
+   **absolute** booking URL (`https://example.com/events`, not `/events`: the
+   reader drops the domain). Adjectives about yourself get flagged as
+   promotional; facts get repeated.
+4. **1–2 sourced statistics** via `<StatCallout value label source sourceUrl>` —
    only real, verifiable numbers with a named source. Omit if none fits; never
    fabricate.
-4. **Closing FAQ** via `<Faq>` + `<FaqItem question answer>` (4–5 items) that
+5. **Closing FAQ** via `<Faq>` + `<FaqItem question answer>` (4–5 items) that
    emits FAQPage JSON-LD. Phrase questions like real search queries; answers must
    agree with the body.
-5. **Freshness:** set/update the `updatedAt` date; keep year markers current.
+6. **Freshness:** set/update the `updatedAt` date; keep year markers current.
 
 > **MDX components:** geo-kit ships `KeyAnswer`, `Faq`/`FaqItem`, `StatCallout`
 > in `src/components/mdx/`. Note: many MDX pipelines do **not** evaluate

@@ -77,7 +77,7 @@ With the WebSearch tool, standard mode unless stated:
 | Not indexed | Sitemap, Bing Webmaster Tools, IndexNow |
 | Indexed, never seen; brand search lost to an aggregator | Entity: listings with identical name and address, Wikidata, aggregator listings linking back, mentions on the "opened instead" domains |
 | Seen, rarely opened | Primary-source content and snippets that promise facts nobody else has |
-| Opened, rarely cited | Answer-first block with the deciding facts, dated |
+| Opened, rarely cited | The facts agents ask the page for (price, dates, season, booking), dated, including for the site's own offering; structure alone didn't change extraction in testing |
 
 Write the plan into the project's GEO plan (geo-kit `playbook/plan-template.md`,
 "Engine coverage" phase): the funnel numbers as the baseline, targets for the

@@ -11,6 +11,7 @@ reusable method is [`playbook/engine-coverage.md`](../../../playbook/engine-cove
 | `runs.jsonl` | One record per run (60): queries, pages opened, result domains, final answer |
 | `queries.jsonl`, `report.md`, `report.json` | Output of `cli.ts report` |
 | `coverage.md`, `coverage.json` | Output of `cli.ts coverage --site dinnerswithfriends.co.uk --brand "Dinners With Friends"` |
+| `answer-block-test.md` | Does restructuring a page (question headings, answer block) change what an agent's page reader takes from it? |
 
 Search Console figures used for term selection and comparison aren't included.
 
